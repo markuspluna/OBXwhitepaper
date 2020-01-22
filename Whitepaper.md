@@ -1,4 +1,4 @@
-![alt text](https://github.com/mootz12/OptionBlox/blob/master/photos/obx%20logo.png "Logo Title Text 1")
+![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/obx%20logo.png "Logo Title Text 1")
 # OPTIONBLOX
 ## A Derivatives Writing and Trading Solution Built on Stellar
 
@@ -105,21 +105,21 @@ Our covered options are created using a network of accounts and preauthorized tr
 
 Below is a basic model showing the writing, sale, and exercise processes of a covered call with an underlying of 1 Bitcoin(BTC), and a strike price of 50 Lumens(XLM).
 
-![alt text](https://github.com/mootz12/OptionBlox/blob/master/photos/writing%20sale%20exercise-covered(whitepaper).png "Writing/Sale/Excercise Covered Call")
+![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/writing%20sale%20exercise-covered(whitepaper).png "Writing/Sale/Excercise Covered Call")
 
 ##### Uncovered Options
 Our uncovered options use a similar process as our covered options. The key difference is the holding account also serves as a margin account for the seller. We use an open-source code repository to operate the logic surrounding margin requirements. Stellar's native operations are not complicated enough to allow us to perform the logic on-ledger. Using a repository also increases efficiency.  We create an encrypted keypair for the repository to accomplish this securely. We do not have access to this keypair. We then add the repository's secret key as a signer on the holding account. This allows the repository to sign pre-defined operations for the holding account.
 
 Below is a model showing the writing, sale, and execution process of an uncovered call. The call's underlying is 100 BTC,  it's strike price is 500 XLM, the initial margin requirement is 20%, and the minimum margin requirement is 15%. These options are European style.
 
-![alt text](https://github.com/mootz12/OptionBlox/blob/master/photos/uncovered%20options-(whitepaper).png "Uncovered Options")
+![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/uncovered%20options-(whitepaper).jpg "Uncovered Options")
 
 ##### Futures
 Our futures protocol expands on the uncovered options protocol. We use two margin and holding accounts, one for the buyer and one for the seller. We use the same open-source repository that we use with uncovered options to handle the margin and settlement operations. We settle our futures daily
 
 Below is a basic model showing the writing, sale, execution, and exit of a 100XLM:10BTC future with a 20% initial margin requirement and a 15% minimum margin requirement
 
-![alt text](https://github.com/mootz12/OptionBlox/blob/master/photos/futures-educational(whitepaper).png "Futures")
+![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/futures-educational(whitepaper).png "Futures")
 
 ##### Forwards
 Our forwards protocol operates in the same way as our futures protocol, the only difference is forwards do not rebalance daily.
@@ -130,7 +130,7 @@ We offer margin accounts for organizations that want to provide their decentrali
 
 Below is a basic model showing a margin account with a 50% margin, an initial deposit of 100xlm, and rebalancing required when the account loses 20% of its initial value.
 
-![alt text](https://github.com/mootz12/OptionBlox/blob/master/photos/margin%20account%20(whitepaper).png "Margin Account Architecture")
+![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/margin%20account%20(whitepaper).png "Margin Account Architecture")
 
 ### Security:
 
