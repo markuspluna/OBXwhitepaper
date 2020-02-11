@@ -14,21 +14,22 @@ Adventum Technology presents a decentralized system for writing and trading fina
 
 #### Derivatives:
 
-A derivative is a contract between two parties. Its value is based on an agreed upon asset or a set of assets. The most common forms of financial derivatives are futures, options, and forwards.
+A derivative is a contract between two parties. Its value is based on an agreed-upon asset or a set of assets. The most common forms of financial derivatives are futures, options, forwards, and swaps.
 
-- Futures are a contract between two parties to buy/sell an agreed-upon quantity of an asset at a set price at an established future time. Futures are most commonly used to hedge against price movement by the underlying asset, a means to increase leverage or a means of gaining exposure to rates. Futures are typically settled daily, so at the end of each day, an investor profits or losses are realized.
+- Futures are a contract between two parties to buy/sell an agreed-upon quantity of an asset at a set price at an established future time. Futures are most commonly used to hedge against price movement by the underlying asset, as a means to increase leverage, or as a means of gaining exposure to rates. Futures are typically settled daily, so at the end of each day, an investor's profits or losses are realized.
 
-- Options are contracts between two parties, a writer and a buyer. They give the buyer the option, but not the obligation, to buy or sell an asset at an agreed upon price until the option expires. If the buyer decides to exercise this right, the option writer would buy or sell the asset. Options can be either American or European style and can be either puts or calls. American style options can be exercised at any date up until their expiration date. European style options can only be exercised on their expiration date. A call option allows its owner to buy the underlying asset at the agreed upon "strike price", and a put option allows its owner to sell the underlying asset at the strike price. Common uses of options are hedging, increasing leverage, and income generation.
+- Options are contracts between two parties, a writer and a buyer. They give the buyer the option, but not the obligation, to buy or sell an asset at an agreed-upon price until the option expires. If the buyer decides to exercise this right, the option writer would buy or sell the asset. Options can be either American or European style and can be either puts or calls. American style options can be exercised at any date up until their expiration date. European style options can only be exercised on their expiration date. A call option allows its owner to buy the underlying asset at the agreed-upon "strike price", and a put option allows its owner to sell the underlying asset at the strike price. Common uses of options are hedging, increasing leverage, and income generation.
 
 - Forwards are similar to futures. The main difference is that they are not settled until the expiration date. They are typically highly specified to the buyer and seller's needs.
 
+Swaps are similar to forwards. The difference is that instead of one exchange of assets at the expiration date, the parties swap assets twice. Once at the beginning of the contract and once at the end. These exchanges are referred to as the "near leg" and the "far leg".
 #### Value Proposition:  
 
 - *Decreased Costs*  
 The incumbent derivatives market comes with a large amount of friction. It requires middlemen to provide access to the market, facilitate trades, and lower counterparty risk. This inefficiency creates costs that get passed on to investors. CBOE, one of the largest derivative exchanges, had revenues of $0.480 per option contract traded and $2.513 per future contract traded [(source)](http://ir.cboe.com/~/media/Files/C/CBOE-IR-V2/documents/annual-proxy/2017-annual-report-and-form-10-k.pdf). This is all added cost for derivative users. Using our system, processing both types of contracts costs around one-thousandth of a cent. These savings become exponentially larger when you consider OTC (over-the-counter) derivatives. These contracts are highly specific, complicated, and can carry a large amount of counterparty risk. Our system makes it significantly easier to create and trade OTC derivatives, while also greatly lowering counterparty risk. These improvements make OTC derivatives much cheaper and more accessible.
 
 - *Market Accessibility*  
-OptionBlox increases market accessibility. Investors around the world struggle to participate in major derivative markets unless they live in developed nations. The decentralized nature of our system means our service is accessible to anyone with an internet connection. It also does not fall under any national regulatory body's jurisdiction. As a result, millions of investors gain efficient access to major derivative markets.
+OptionBlox increases market accessibility. Investors around the world struggle to participate in major derivative markets unless they live in developed nations. The decentralized nature of our system means our service is accessible to anyone with an internet connection. As a result, millions of investors gain efficient access to major derivative markets.
 
 - *Market Flexibility*  
 Stellar's Anchor system combined with the flexibility of OptionBlox means our platform allows users to write derivatives with any asset. People with needs for derivatives that are not currently supported by the traditional market can write and trade derivatives that better suit their requirements.  
@@ -38,7 +39,7 @@ Stellar's Anchor system combined with the flexibility of OptionBlox means our pl
 Decentralizing our service allows us to make it more flexible and efficient than the incumbent system, while still retaining a similar level of security. The elements of a decentralized system that are most important to us are:
 
 - *Proof of ownership*  
-The public and collective nature of a decentralized ledger means individuals can't misrepresent what they own on the ledger, including assets and smart contracts. This allows us to easily verify asset ownership and ensure smart contracts are set up correctly. The result is that the consumer's need for middlemen to handle counterparty risk is greatly reduced.
+The public and collective nature of a decentralized ledger mean individuals can't misrepresent what they own on the ledger, including assets and smart contracts. This allows us to easily verify asset ownership and ensure smart contracts are set up correctly. The result is that the consumer's need for middlemen to handle counterparty risk is greatly reduced.
 
 - *Accessibility*   
 Decentralized networks are incredibly accessible. They are run by a network of nodes situated around the globe, and any individual can connect to the network or become one of the nodes. On top of this, Stellar has an exchange functionality built into its network. The open nature of this system means that consumers no longer require a third party to host an electronic exchange and provide them access to it. Additionally, it opens the market to new parties that find it difficult to access incumbent markets. Finally, the lack of reliance on third parties to provide market access combined with the flexibility of our derivative writing protocol allows consumers to write new kinds of derivatives, potentially creating new markets.
@@ -87,7 +88,7 @@ We would like to outline a few cases to help explain the use and value of the Op
 1. **Currency Stabilization Use Case:**  
 A primary concern for cryptocurrency holders is volatility. OptionBlox enables users to utilize financial derivatives to hedge against cryptocurrency volatility.
 
-   Latera is a personal investor. He has read about the high-interest rates bitcoin (BTC) savings accounts offer, and would like to open one. However, the volatility of cryptocurrency is a major deterrent. He comes across a tool called OptionBlox that allows him to enter into a future contract guaranteeing him an exchange rate of 1BTC:$8000USD in 1 year time. He enters into the contract and opens a savings account with his BTC.
+   Latera is a personal investor. He has read about the high-interest rates bitcoin (BTC) savings accounts offer, and would like to open one. However, the volatility of cryptocurrency is a major deterrent. He comes across a tool called OptionBlox that allows him to enter into a future contract guaranteeing him an exchange rate of 1BTC:$8000USD in 1 year's time. He enters into the contract and opens a savings account with his BTC.
 
 2. **Developing Country Use Case:**  
 Investors in developing countries often do not have efficient global market access. They lack access to local brokers, international brokers often do not allow them to open accounts, it can be hard for them to obtain foreign currency, and governments can have regulations to prevent investing in foreign assets. OptionBlox allows parties to create derivatives on Stellar’s ledger and sell them to investors in developing countries, circumventing these obstacles.
@@ -112,7 +113,7 @@ Below is a basic model showing the writing, sale, and exercise processes of a co
 ##### Uncovered Options
 Our uncovered options use a similar process as our covered options. The key difference is the holding account also serves as a margin account for the seller. We use an open-source code repository to operate the logic surrounding margin requirements. Stellar's native operations are not complicated enough to allow us to calculate margin requirements within transactions. Using a repository also increases processing speed.  We create an encrypted keypair for the repository to accomplish this securely. We do not have access to this keypair. We then add the repository's secret key as a signer on the holding account. This allows the repository to sign pre-defined operations for the holding account.
 
-Below is a model showing the writing, sale, and execution process of an uncovered call. The call's underlying is 100 BTC,  it's strike price is 500 XLM, the initial margin requirement is 20%, and the minimum margin requirement is 15%. These options are European style.
+Below is a model showing the writing, sale, and execution process of an uncovered call. The call's underlying is 100 BTC,  its strike price is 500 XLM, the initial margin requirement is 20%, and the minimum margin requirement is 15%. These options are European style.
 
 ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/uncovered%20options-(whitepaper).png "Uncovered Options")
 
@@ -124,7 +125,7 @@ Below is a basic model showing the writing, sale, execution, and exit of a 100XL
 ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/futures-educational(whitepaper).png "Futures")
 
 ##### Forwards
-Our forwards protocol operates almost the same way as our futures protocol. The main difference is forwards do not settle daily. As a result, underlying values do not change. Therefore, we can use joint-preauthorized transactions instead of the signing transactions with the repository in the exercise process.
+Our forwards protocol operates almost the same way as our futures protocol. The main difference is forwards do not settle daily. As a result, underlying values do not change. Therefore, we can use joint-preauthorized transactions in the exercise process instead of signing transactions with the repository.
 
 ##### Swaps
 Our swaps protocol operates almost the same way as our forwards protocol. We just add a near leg exercise step.
@@ -134,7 +135,7 @@ Below is a basic model showing the writing, sale, and execution of a 100XLM:10BT
 ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/Swaps-model(whitepaper).png "Swaps")
 
 #### Margin Accounts:
-We offer margin accounts for organizations that want to provide their decentralized exchange users with margin. We utilize a global holding account that stores user's deposits and sends them a custom margin asset in exchange. The margin funds are deposited in user accounts where the repository is the only signer. The repository will only sign trustline operations for approved assets and buy/sell transactions. This prevents users from moving margin assets or assets they purchase out of this account. We apply margin requirement operations to this account.
+We offer margin accounts for organizations that want to provide their decentralized exchange users with margin. We utilize a global holding account that stores user's deposits and sends them a custom margin asset in exchange. The margin funds are deposited in user accounts where the repository is the only signer. The repository will only sign trustline operations for approved assets and buy/sell transactions. This prevents users from moving margin assets or assets they purchase out of this account. We require a margin balance in this account and will perform margin checks and calls on it.
 
 Below is a basic model showing a margin account with a 50% margin, an initial deposit of 100xlm, and rebalancing required when the account loses 20% of its initial value.
 
@@ -145,7 +146,7 @@ Below is a basic model showing a margin account with a 50% margin, an initial de
 To ensure that our derivatives and margin accounts are secure we use a variety of Stellar's features.
 
 - *Locking Accounts and Preauthorizing Transactions*  
-In most of our protocols, we have some accounts preauthorize transactions then lock the accounts. This ensures that the only transactions they can post in the future are the preauthorized ones. We use this to lock funds in holding accounts until contract exercise.  
+In most of our protocols, we have accounts preauthorize transactions then lock themselves. This ensures that the only transactions they can post in the future are the preauthorized ones. We use this to lock funds in holding accounts until contract exercise.  
 [More info](https://www.stellar.org/developers/guides/concepts/multi-sig.html)
 
   - **Joint Preauthorized Transactions**  
