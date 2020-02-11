@@ -15,20 +15,20 @@ Adventum Technology presents a decentralized system for writing and trading fina
 #### Derivatives:
 
 A derivative is a contract between two parties. Its value is based on an agreed upon asset or a set of assets. The most common forms of financial derivatives are futures, options, and forwards.
- 
-- Futures are a contract between two parties to buy/sell an agreed-upon quantity of an asset at a set price at an established future time. Futures are most commonly used to hedge against price movement by the underlying asset, a means to increase leverage or a means of gaining exposure to rates. Futures are typically settled daily, so at the end of each day, an investor profits or losses are realized. 
- 
+
+- Futures are a contract between two parties to buy/sell an agreed-upon quantity of an asset at a set price at an established future time. Futures are most commonly used to hedge against price movement by the underlying asset, a means to increase leverage or a means of gaining exposure to rates. Futures are typically settled daily, so at the end of each day, an investor profits or losses are realized.
+
 - Options are contracts between two parties, a writer and a buyer. They give the buyer the option, but not the obligation, to buy or sell an asset at an agreed upon price until the option expires. If the buyer decides to exercise this right, the option writer would buy or sell the asset. Options can be either American or European style and can be either puts or calls. American style options can be exercised at any date up until their expiration date. European style options can only be exercised on their expiration date. A call option allows its owner to buy the underlying asset at the agreed upon "strike price", and a put option allows its owner to sell the underlying asset at the strike price. Common uses of options are hedging, increasing leverage, and income generation.
- 
+
 - Forwards are similar to futures. The main difference is that they are not settled until the expiration date. They are typically highly specified to the buyer and seller's needs.
 
 #### Value Proposition:  
 
 - *Decreased Costs*  
-The incumbent derivatives market comes with a large amount of friction. It requires middlemen to provide access to the market, facilitate trades, and lower counterparty risk. This inefficiency creates costs that get passed on to investors. CBOE, one of the largest derivative exchanges, had revenues of $0.480 per option contract traded and $2.513 per future contract traded [(source)](http://ir.cboe.com/~/media/Files/C/CBOE-IR-V2/documents/annual-proxy/2017-annual-report-and-form-10-k.pdf). This is all added cost for derivative users. Using our system, processing both types of contracts costs around one-thousandth of a cent. These savings become exponentially larger when you consider OTC (over-the-counter) derivatives. These contracts are highly specific, complicated, and can carry a large amount of counterparty risk. Our system makes it significantly easier to create and trade OTC derivatives, while also greatly lowering counterparty risk. These improvements make OTC derivatives much cheaper and more accessible. 
+The incumbent derivatives market comes with a large amount of friction. It requires middlemen to provide access to the market, facilitate trades, and lower counterparty risk. This inefficiency creates costs that get passed on to investors. CBOE, one of the largest derivative exchanges, had revenues of $0.480 per option contract traded and $2.513 per future contract traded [(source)](http://ir.cboe.com/~/media/Files/C/CBOE-IR-V2/documents/annual-proxy/2017-annual-report-and-form-10-k.pdf). This is all added cost for derivative users. Using our system, processing both types of contracts costs around one-thousandth of a cent. These savings become exponentially larger when you consider OTC (over-the-counter) derivatives. These contracts are highly specific, complicated, and can carry a large amount of counterparty risk. Our system makes it significantly easier to create and trade OTC derivatives, while also greatly lowering counterparty risk. These improvements make OTC derivatives much cheaper and more accessible.
 
 - *Market Accessibility*  
-OptionBlox increases market accessibility. Investors around the world struggle to participate in major derivative markets unless they live in developed nations. The decentralized nature of our system means our service is accessible to anyone with an internet connection. It also does not fall under any national regulatory body's jurisdiction. As a result, millions of investors gain efficient access to major derivative markets. 
+OptionBlox increases market accessibility. Investors around the world struggle to participate in major derivative markets unless they live in developed nations. The decentralized nature of our system means our service is accessible to anyone with an internet connection. It also does not fall under any national regulatory body's jurisdiction. As a result, millions of investors gain efficient access to major derivative markets.
 
 - *Market Flexibility*  
 Stellar's Anchor system combined with the flexibility of OptionBlox means our platform allows users to write derivatives with any asset. People with needs for derivatives that are not currently supported by the traditional market can write and trade derivatives that better suit their requirements.  
@@ -36,7 +36,7 @@ Stellar's Anchor system combined with the flexibility of OptionBlox means our pl
 #### What Decentralization Provides:
 
 Decentralizing our service allows us to make it more flexible and efficient than the incumbent system, while still retaining a similar level of security. The elements of a decentralized system that are most important to us are:
- 
+
 - *Proof of ownership*  
 The public and collective nature of a decentralized ledger means individuals can't misrepresent what they own on the ledger, including assets and smart contracts. This allows us to easily verify asset ownership and ensure smart contracts are set up correctly. The result is that the consumer's need for middlemen to handle counterparty risk is greatly reduced.
 
@@ -112,18 +112,24 @@ Our uncovered options use a similar process as our covered options. The key diff
 
 Below is a model showing the writing, sale, and execution process of an uncovered call. The call's underlying is 100 BTC,  it's strike price is 500 XLM, the initial margin requirement is 20%, and the minimum margin requirement is 15%. These options are European style.
 
-![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/uncovered%20options-(whitepaper).jpg "Uncovered Options")
+![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/uncovered%20options-(whitepaper).png "Uncovered Options")
 
 ##### Futures
 Our futures protocol expands on the uncovered options protocol. We use two margin and holding accounts, one for the buyer and one for the seller. We use the same open-source repository that we use with uncovered options to handle the margin and settlement operations. We settle our futures daily
 
-Below is a basic model showing the writing, sale, execution, and exit of a 100XLM:10BTC future with a 20% initial margin requirement and a 15% minimum margin requirement
+Below is a basic model showing the writing, sale, execution, and exit of a 100XLM:10BTC future with a 15% initial margin requirement and a 10% minimum margin requirement
 
 ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/futures-educational(whitepaper).png "Futures")
 
 ##### Forwards
-Our forwards protocol operates in the same way as our futures protocol, the only difference is forwards do not rebalance daily.
+Our forwards protocol operates almost the same way as our futures protocol. The main difference is forwards do not settle daily. As a result, underlying values do not change. Therefore, we can use joint-preauthorized transactions instead of the signing transactions with the repository in the exercise process.
 
+##### Swaps
+Our swaps protocol operates almost the same way as our forwards protocol. We just add a near leg exercise step.
+
+Below is a basic model showing the writing, sale, and execution of a 100XLM:10BTC swap with a 15% initial margin requirement and a 10% minimum margin requirement
+
+![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/Swaps-model(whitepaper).png "Swaps")
 
 #### Margin Accounts:
 We offer margin accounts for organizations that want to provide their decentralized exchange users with margin. We utilize a global holding account that stores user's deposits and sends them a custom margin asset in exchange. The margin funds are deposited in user accounts where the repository is the only signer. The repository will only sign trustline operations for approved assets and buy/sell transactions. This prevents users from moving margin assets or assets they purchase out of this account. We apply margin requirement operations to this account.
@@ -140,6 +146,9 @@ To ensure that our derivatives and margin accounts are secure we use a variety o
 In most of our protocols, we have some accounts preauthorize transactions then lock the accounts. This ensures that the only transactions they can post in the future are the preauthorized ones. We use this to lock funds in holding accounts until contract exercise.  
 [More info](https://www.stellar.org/developers/guides/concepts/multi-sig.html)
 
+  - **Joint Preauthorized Transactions**  
+Joint-preauthorized transactions allow us to preauthorize transaction envelopes involving multiple source accounts. This prevents situations where preauthorized transactions for one holding account fail while the other account's preauthorized transactions succeed.
+
 - *Timebound Transactions*  
 In all of our protocols, we use timebound transactions in the exercise process to ensure certain transactions cannot be submitted early. Submitting some transactions early would disrupt the exercise process.  
 [More info](https://www.stellar.org/developers/guides/concepts/multi-sig.html)
@@ -148,6 +157,46 @@ In all of our protocols, we use timebound transactions in the exercise process t
 Stellar's consensus protocol rejects transactions when they do not align with the correct ledger state. For example, a user could not fill a sell offer if their account lacked the necessary funds.  
 [More Info](https://www.stellar.org/developers/guides/concepts/scp.html)  
 
+- *Authorization Required Flag*
+We have the option of adding an authorization required flag to our issuing accounts. This ensures that the only accounts which can hold our custom assets are accounts that we approve.
+
+### Anchors:
+
+The functionality of OptionBlox is directly tied to the availability of Anchors in the Stellar ecosystem. To use a non-native asset as an underlying there has to be a third party already anchoring the asset.  
+Here are some non-native assets that are currently anchored by reputable parties:
+- USD: US dollar anchor provided by [AnchorUSD](https://www.anchorusd.com/), a Stellar partner.
+- XCN: Chinese yuan anchor provided by [FChain](https://fchain.io).  
+- BTC: Bitcoin anchor provided by [Papaya](https://apay.io/in).
+- EURT: Euro anchor provided by [Tempo](https://tempo.eu.com/en).
+- NGNT: Nigerian Naira anchor provided by [Cowrie](https://www.cowrie.exchange/).
+- GOLD: Gold anchor provided by [StellarMetals](stellarmetals.org).
+- ETH: Etherium anchor provided by [Papaya](https://apay.io/in).
+
+More anchors can be viewed on [StellarX](https://www.stellarx.com/markets)
+
+As Stellar's network grows we are confident that more anchors will materialize and expand OptionBlox's functionality.
+
 ### Next Steps:
 
 At Adventum we are in the beginning stages of building the OptionBlox backend and platform. While we are doing this we will be searching for potential investors and partnerships.
+##### Roadmap
+1. *Q1 2020*
+   - Begin Application Development
+   - Grow OptionBlox's Brand
+      - Put out content.
+      - Explore presenting at conferences.
+   - Attract New Talent (primarily in engineering)
+   - Finalize Investor Material
+      - Finalize Website.
+      - Finalize Revenue Model.
+      - Finalize Investment Pitch.
+   - Begin Approaching Potential Investors and Partners
+      - We will begin looking for a seed investor.
+      - We are going to start reaching out to blockchain and finance orgs that may have a use for our platform.
+           - Focusing on Decentralized Exchanges, Market Makers, Hedge Funds, and Payment Platforms.
+ 2. *Q2 2020*
+   - Continue Application Development
+   - Continue Approaching Potential Investors and Partners
+   - Continue Building OptionBlox's Brand
+ 3. *Q3 2020*
+   - Launch MVP and Push it Open-Source
