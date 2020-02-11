@@ -48,8 +48,10 @@ The unquestionable nature of a decentralized network combined with its accessibi
 
 #### Our Decentralized Ledger:
 
-We use Stellar's decentralized ledger to support our protocol.   
+We use Stellar's decentralized ledger to support our protocol.
+
 In Stellar’s words:  
+
 “Fundamentally, Stellar is a system for tracking ownership. It uses an accounting ledger, shared across a network of independent computers, to store two important things for every account holder: what they own (their account balances) and what they want to do with what they own (operations on those balances, like buy or sell offers.)
 
 The computers that run Stellar and publish the ledger are called nodes. They systematically validate the ledger’s contents so it’s always consistent across the network. For example, when you send someone a dollar on a Stellar-built app, the nodes check that the correct balances were debited and credited, and each node makes sure every other node sees and agrees to the transaction.”
@@ -60,9 +62,9 @@ For more general information visit: [Stellar's website](https://www.stellar.org/
 For more information on how the nodes validate transactions see: [Stellar Consensus Protocol](https://www.stellar.org/developers/guides/concepts/scp.html).  
 For more information on how we interact with Stellar’s network visit: [Network Overview](https://www.stellar.org/developers/guides/get-started/index.html).
 
-Terms:
-Smart Contract: A protocol to digitally facilitate, verify, or enforce the performance of a contract.  
-Keypair: When an account is created on Stellar's ledger, they are assigned a public and a private key. The private key is used to sign transactions and the public key is used to identify the account. These two keys make up the account's keypair.
+Terms:  
+- *Smart Contract:* A protocol to digitally facilitate, verify, or enforce the performance of a contract.  
+- *Keypair:* When an account is created on Stellar's ledger, they are assigned a public and a private key. The private key is used to sign transactions and the public key is used to identify the account. These two keys make up the account's keypair.
 
 #### Stellar's Features:
 
