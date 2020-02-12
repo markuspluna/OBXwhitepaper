@@ -160,7 +160,7 @@ In all of our protocols, we use timebound transactions in the exercise process t
 Stellar's consensus protocol rejects transactions when they do not align with the correct ledger state. For example, a user could not fill a sell offer if their account lacked the necessary funds.  
 [More Info](https://www.stellar.org/developers/guides/concepts/scp.html)  
 
-- *Authorization Required Flag*
+- *Authorization Required Flag*  
 We have the option of adding an authorization required flag to our issuing accounts. This ensures that the only accounts which can hold our custom assets are accounts that we approve.
 
 ### Anchors:
