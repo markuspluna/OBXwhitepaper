@@ -22,7 +22,7 @@ A derivative is a contract between two parties. Its value is based on an agreed-
 
 - Forwards are similar to futures. The main difference is that they are not settled until the expiration date. They are typically highly specified to the buyer and seller's needs.
 
-Swaps are similar to forwards. The difference is that instead of one exchange of assets at the expiration date, the parties swap assets twice. Once at the beginning of the contract and once at the end. These exchanges are referred to as the "near leg" and the "far leg".
+- Swaps are similar to forwards. The difference is that instead of one exchange of assets at the expiration date, the parties swap assets twice. Once at the beginning of the contract and once at the end. These exchanges are referred to as the "near leg" and the "far leg".
 #### Value Proposition:  
 
 - *Decreased Costs*  
