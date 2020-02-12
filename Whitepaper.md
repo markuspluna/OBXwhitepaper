@@ -26,7 +26,7 @@ Swaps are similar to forwards. The difference is that instead of one exchange of
 #### Value Proposition:  
 
 - *Decreased Costs*  
-The incumbent derivatives market comes with a large amount of friction. It requires middlemen to provide access to the market, facilitate trades, and lower counterparty risk. This inefficiency creates costs that get passed on to investors. CBOE, one of the largest derivative exchanges, had revenues of $0.480 per option contract traded and $2.513 per future contract traded [(source)](http://ir.cboe.com/~/media/Files/C/CBOE-IR-V2/documents/annual-proxy/2017-annual-report-and-form-10-k.pdf). This is all added cost for derivative users. Using our system, processing both types of contracts costs around one-thousandth of a cent. These savings become exponentially larger when you consider OTC (over-the-counter) derivatives. These contracts are highly specific, complicated, and can carry a large amount of counterparty risk. Our system makes it significantly easier to create and trade OTC derivatives, while also greatly lowering counterparty risk. These improvements make OTC derivatives much cheaper and more accessible.
+The incumbent derivatives market comes with a large amount of friction. It requires middlemen to provide access to the market, facilitate trades, and lower counterparty risk. This inefficiency creates costs that get passed on to investors. CBOE, one of the largest derivative exchanges, had revenues of $0.480 per option contract traded and $2.513 per future contract traded [(source)](http://ir.cboe.com/~/media/Files/C/CBOE-IR-V2/documents/annual-proxy/2017-annual-report-and-form-10-k.pdf). This is all added cost for derivative users. Using our system, processing both types of contracts costs around one-thousandth of a cent. These savings become exponentially larger when you consider OTC(over-the-counter) derivatives. These contracts are highly specific, complicated, and can carry a large amount of counterparty risk. Our system makes it significantly easier to create and trade OTC derivatives, while also greatly lowering counterparty risk. These improvements make OTC derivatives much cheaper and more accessible.
 
 - *Market Accessibility*  
 OptionBlox increases market accessibility. Investors around the world struggle to participate in major derivative markets unless they live in developed nations. The decentralized nature of our system means our service is accessible to anyone with an internet connection. As a result, millions of investors gain efficient access to major derivative markets.
@@ -39,7 +39,7 @@ Stellar's Anchor system combined with the flexibility of OptionBlox means our pl
 Decentralizing our service allows us to make it more flexible and efficient than the incumbent system, while still retaining a similar level of security. The elements of a decentralized system that are most important to us are:
 
 - *Proof of ownership*  
-The public and collective nature of a decentralized ledger mean individuals can't misrepresent what they own on the ledger, including assets and smart contracts. This allows us to easily verify asset ownership and ensure smart contracts are set up correctly. The result is that the consumer's need for middlemen to handle counterparty risk is greatly reduced.
+The public and collective nature of a decentralized ledger means individuals can't misrepresent what they own on the ledger, including assets and smart contracts. This allows us to easily verify asset ownership and ensure smart contracts are set up correctly. The result is that the consumer's need for middlemen to handle counterparty risk is greatly reduced.
 
 - *Accessibility*   
 Decentralized networks are incredibly accessible. They are run by a network of nodes situated around the globe, and any individual can connect to the network or become one of the nodes. On top of this, Stellar has an exchange functionality built into its network. The open nature of this system means that consumers no longer require a third party to host an electronic exchange and provide them access to it. Additionally, it opens the market to new parties that find it difficult to access incumbent markets. Finally, the lack of reliance on third parties to provide market access combined with the flexibility of our derivative writing protocol allows consumers to write new kinds of derivatives, potentially creating new markets.
@@ -91,7 +91,7 @@ A primary concern for cryptocurrency holders is volatility. OptionBlox enables u
    Latera is a personal investor. He has read about the high-interest rates bitcoin (BTC) savings accounts offer, and would like to open one. However, the volatility of cryptocurrency is a major deterrent. He comes across a tool called OptionBlox that allows him to enter into a future contract guaranteeing him an exchange rate of 1BTC:$8000USD in 1 year's time. He enters into the contract and opens a savings account with his BTC.
 
 2. **Developing Country Use Case:**  
-Investors in developing countries often do not have efficient global market access. They lack access to local brokers, international brokers often do not allow them to open accounts, it can be hard for them to obtain foreign currency, and governments can have regulations to prevent investing in foreign assets. OptionBlox allows parties to create derivatives on Stellar’s ledger and sell them to investors in developing countries, circumventing these obstacles.
+Investors in developing countries often do not have efficient global market access. They lack access to local brokers and international brokers often do not allow them to open accounts. Also, it can be hard for them to obtain foreign currency and governments can have regulations to prevent investing in foreign assets. OptionBlox allows parties to create derivatives on Stellar’s ledger and sell them to investors in developing countries, circumventing these obstacles.
 
    Adam is a citizen and resident of Vietnam. He would like to invest in AAPL calls but there are no local option brokers and foreign brokers do not accept the Vietnamese Dong (VND). Foreign currency exchange is illegal in Vietnam, making exchanging his VND for USD or other currencies difficult and costly. Adam finds out about OptionBlox and realizes it is the answer to his problems. Utilizing a cryptocurrency exchange, Adam exchanges his VND for BTC. Then he exchanges BTC for a BTC anchor on Stellar. He can now utilize his BTC token to purchase AAPL calls written by a hedge fund in the USA, achieving his investment goals.
 
@@ -125,7 +125,7 @@ Below is a basic model showing the writing, sale, execution, and exit of a 100XL
 ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/futures-educational(whitepaper).png "Futures")
 
 ##### Forwards
-Our forwards protocol operates almost the same way as our futures protocol. The main difference is forwards do not settle daily. As a result, underlying values do not change. Therefore, we can use joint-preauthorized transactions in the exercise process instead of signing transactions with the repository.
+Our forwards protocol operates almost the same way as our futures protocol. The main difference is that forwards do not settle daily. As a result, underlying values do not change. Therefore, we can use joint-preauthorized transactions in the exercise process instead of signing transactions with the repository.
 
 ##### Swaps
 Our swaps protocol operates almost the same way as our forwards protocol. We just add a near leg exercise step.
@@ -143,7 +143,7 @@ Below is a basic model showing a margin account with a 50% margin, an initial de
 
 ### Security:
 
-To ensure that our derivatives and margin accounts are secure we use a variety of Stellar's features.
+We use a variety of Stellar's features to ensure that our derivatives and margin accounts are secure.
 
 - *Locking Accounts and Preauthorizing Transactions*  
 In most of our protocols, we have accounts preauthorize transactions then lock themselves. This ensures that the only transactions they can post in the future are the preauthorized ones. We use this to lock funds in holding accounts until contract exercise.  
