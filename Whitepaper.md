@@ -110,7 +110,7 @@ Stellar has a flexible transaction system that allows us to create derivatives a
 [Stellar's website](https://www.stellar.org/developers/guides/walkthroughs/stellar-smart-contracts.html)
 
 ### Use Cases:
-OptionBlox can be used for all of the functions traditional derivatives could be used for such as investment and risk management. It performs these functions more efficiently than incumbent system due to the friction reduction we discussed previously. We will discuss a few use cases that highlight the flexibility and accessability of our system. 
+OptionBlox can be used for all of the functions traditional derivatives could be used for such as investment and risk management. It performs these functions more efficiently than the incumbent system due to the friction reduction we discussed previously. We will discuss a few use cases that highlight the flexibility and accessability of our system. 
 
 1. **Cryptocurrency Investment Hedging:**  
 A primary concern for cryptocurrency holders is volatility. OptionBlox enables users to utilize financial derivatives to hedge against cryptocurrency volatility. OptionBlox's capability of supporting any asset pair means it supports a wide range of cryptocurrencies. In addition, OptionBlox's efficiency and accessibility results in lower fees and tighter spreads than competing solutions.
@@ -148,9 +148,9 @@ Below is a model showing the writing, sale, and execution process of an uncovere
 ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/uncoveredOptions-model(whitepaper).png "Uncovered Options")
 
 ##### Futures
-Our futures protocol expands on the uncovered options protocol. We use two margin and holding accounts, one for the buyer and one for the seller. We use the same open-source repository that we use with uncovered options to handle the margin and settlement operations. We settle our futures daily
+Our futures protocol expands on the uncovered options protocol. We use two margin and holding accounts, one for the buyer and one for the seller. We use the same open-source repository that we use with uncovered options to handle the margin and settlement operations. We settle our futures daily.
 
-Below is a basic model showing the writing, sale, execution, and exit of a 100XLM:1BTC future with a 15% initial margin requirement and a 10% minimum margin requirement
+Below is a basic model showing the writing, sale, execution, and exit of a 100XLM:1BTC future with a 15% initial margin requirement and a 10% minimum margin requirement.
 
 ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/Futures-model(whitepaper).png "Futures")
 
@@ -160,7 +160,7 @@ Our forwards protocol operates almost the same way as our futures protocol. The 
 ##### Swaps
 Our swaps protocol operates almost the same way as our forwards protocol. We just add a near leg exercise step.
 
-Below is a basic model showing the writing, sale, and execution of a 100XLM:1BTC swap with a 15% initial margin requirement and a 10% minimum margin requirement
+Below is a basic model showing the writing, sale, and execution of a 100XLM:1BTC swap with a 15% initial margin requirement and a 10% minimum margin requirement.
 
 ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/Swaps-model(whitepaper).png "Swaps")
 
