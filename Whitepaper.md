@@ -59,7 +59,7 @@ OptionBlox increases market accessibility. Potential derivative users struggle t
 - *Market Flexibility*  
 Stellar's Anchor system combined with the flexibility of OptionBlox allows users to write derivatives with any asset. People with use cases for derivatives that are not currently supported by the traditional market can use our solution to write and trade derivatives that better suit their requirements.  
 
--*Tokenized Derivatives*
+- *Tokenized Derivatives*
 Derivatives written with OptionBlox are tokenized. Tokenized derivatives are essential in the decentralized ledger technology space. Tokenization allows our derivatives to be traded on any cryptocurrency exchange, and stored anywhere. A user could write a derivative on our exchange, then transfer it to their Binance account and sell it on their market. A derivative buyer could take their newly purchased derivative tokens and transfer them to their Ledger Nano S for added security. This flexibility is essential due to the fragmentation of the decentralized ledger technology space. It also serves to further decentralize OptionBlox. 
 
 #### What Decentralized Ledger Technology Provides:
