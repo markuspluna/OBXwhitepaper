@@ -145,7 +145,7 @@ Our uncovered options use a similar process as our covered options. The key diff
 
 Below is a model showing the writing, sale, and execution process of an uncovered call. The call's underlying is 1 BTC, its strike price is 50 XLM, the initial margin requirement is 20%, and the minimum margin requirement is 15%. These options are European style.
 
-![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/uncovered options-(v2).png "Uncovered Options")
+![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/uncovered%20options-(v2).png "Uncovered Options")
 
 ##### Futures
 Our futures protocol expands on the uncovered options protocol. We use two margin and holding accounts, one for the buyer and one for the seller. We use the same open-source repository that we use with uncovered options to handle the margin and settlement operations. We settle our futures daily.
