@@ -138,38 +138,27 @@ Our covered options are created using a network of accounts and preauthorized tr
 
 Below is a basic model showing the writing, sale, and exercise processes of a covered call with an underlying of 1 Bitcoin(BTC), and a strike price of 50 Lumens(XLM).
 
-![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/coveredOptions-model(whitepaper).png "Covered Options")
+![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/CoveredOptions(v2).png "Covered Options")
 
 ##### Uncovered Options
 Our uncovered options use a similar process as our covered options. The key difference is the holding account also serves as a margin account for the seller. We use an open-source code repository to operate the logic surrounding margin requirements. Stellar's native operations are not complicated enough to allow us to calculate margin requirements within transactions. Using a repository also increases processing speed.  We create an encrypted keypair for the repository to accomplish this securely. We do not have access to this keypair. We then add the repository's secret key as a signer on the holding account. This allows the repository to sign pre-defined transactions for the holding account.
 
 Below is a model showing the writing, sale, and execution process of an uncovered call. The call's underlying is 1 BTC, its strike price is 50 XLM, the initial margin requirement is 20%, and the minimum margin requirement is 15%. These options are European style.
 
-![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/uncoveredOptions-model(whitepaper).png "Uncovered Options")
+![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/uncovered options-(v2).png "Uncovered Options")
 
 ##### Futures
 Our futures protocol expands on the uncovered options protocol. We use two margin and holding accounts, one for the buyer and one for the seller. We use the same open-source repository that we use with uncovered options to handle the margin and settlement operations. We settle our futures daily.
 
 Below is a basic model showing the writing, sale, execution, and exit of a 100XLM:1BTC future with a 15% initial margin requirement and a 10% minimum margin requirement.
 
-![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/Futures-model(whitepaper).png "Futures")
+![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/futures(v2).png "Futures")
 
 ##### Forwards
 Our forwards protocol operates almost the same way as our futures protocol. The main difference is that forwards do not settle daily. As a result, underlying values do not change. Therefore, we can use joint-preauthorized transactions in the exercise process instead of signing transactions with the repository.
 
 ##### Swaps
-Our swaps protocol operates almost the same way as our forwards protocol. We just add a near leg exercise step.
-
-Below is a basic model showing the writing, sale, and execution of a 100XLM:1BTC swap with a 15% initial margin requirement and a 10% minimum margin requirement.
-
-![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/Swaps-model(whitepaper).png "Swaps")
-
-#### Margin Accounts:
-We offer margin accounts for organizations that want to provide their decentralized exchange users with margin. We utilize a global holding account that stores user's deposits and sends them a custom margin asset in exchange. The margin funds are deposited in user accounts where the repository is the only signer. The repository will only sign trustline operations for approved assets and buy/sell transactions. This prevents users from moving margin assets or assets they purchase out of this account. We require a margin balance in this account and will perform margin checks and calls on it.
-
-Below is a basic model showing a margin account with a 50% margin, an initial deposit of 100xlm, and rebalancing required when the account loses 20% of its initial value.
-
-![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/margin%20account%20(whitepaper).png "Margin Account Architecture")
+We have an internal swaps protocol we plan to implement in the future.
 
 ### Security:
 
