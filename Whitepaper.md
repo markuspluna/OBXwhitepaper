@@ -8,7 +8,7 @@ Alexander Mootz: alexjmootz@gmail.com
 
 ### Abstract
 
-Adventum Technology presents OptionBlox, a solution for writing, trading, and exercising financial derivatives on Stellar's decentralized ledger. OptionBlox  decreases derivative market friction and costs by eliminating the need for market intermediaries. Processing derivatives on a multi-asset decentralized ledger increases market flexibility and accessability. We support derivatives involving any asset pair, and enable open derivative market access. OptionBlox uses a unique smart contract structure which allows for trust-free option, future, and swap writing. Our protocol tokenizes derivative contracts, which means they can be traded on any centralized/decentralized exchange and stored offline. Our protocol also excercises derivatives on-ledger without putting any part at risk. In addition, Adventum Technology showcases a unique ledger-based margin account framework. Using our protocol, organizations building exchanges on Stellar can provide their users with decentralized margin accounts that minimize default risk. 
+Adventum Technology presents OptionBlox, a solution for writing, trading, and exercising financial derivatives on Stellar's decentralized ledger. OptionBlox  decreases derivative market friction and costs by eliminating the need for market intermediaries. Processing derivatives on a multi-asset decentralized ledger increases market flexibility and accessability. We support derivatives involving any asset pair, and enable open derivative market access. OptionBlox uses a unique smart contract structure which allows for trust-free option, future, and swap writing. Our protocol tokenizes derivative contracts, which means they can be traded on any centralized/decentralized exchange and stored offline. Our protocol also excercises derivatives on-ledger without putting any part at risk.
 
 ### Introduction:
 
@@ -106,6 +106,8 @@ Unlike other blockchains, Stellar's network is truly decentralized. There is no 
 Stellar has a multi-asset functionality called anchoring that enables users to create custom assets on its ledger and tie them to real-world assets. We use this to tokenize derivatives and to write derivatives involving any asset.  
 - *Flexible Transaction System*  
 Stellar has a flexible transaction system that allows us to create derivatives and make them trust-free, tradeable, and safe.  
+- [Turing Signing Servers](insert link here)
+The Stellar Community is currently discussing implementing a new ecosystem feature called Turing Signing Servers. These are a decentralized network of servers that hold uploaded smart contracts which are associated with private keys. The servers will sign transactions with these private keys if the transactions meet the specifications of the contracts. We are planning on using this tool to manage some of the business logic surrounding contract execution and closure. However, if this feauture is not implemented we will simply use an open source repository to manage our execution business logic.
 
 [Stellar's website](https://www.stellar.org/developers/guides/walkthroughs/stellar-smart-contracts.html)
 
@@ -143,7 +145,7 @@ Below is a basic model showing the writing, sale, and exercise processes of a co
 ##### Uncovered Options
 Our uncovered options use a similar process as our covered options. The key difference is the holding account also serves as a margin account for the seller. We use an open-source code repository to operate the logic surrounding margin requirements. Stellar's native operations are not complicated enough to allow us to calculate margin requirements within transactions. Using a repository also increases processing speed.  We create an encrypted keypair for the repository to accomplish this securely. We do not have access to this keypair. We then add the repository's secret key as a signer on the holding account. This allows the repository to sign pre-defined transactions for the holding account.
 
-Below is a model showing the writing, sale, and execution process of an uncovered call. The call's underlying is 1 BTC, its strike price is 50 XLM, the initial margin requirement is 20%, and the minimum margin requirement is 15%. These options are European style.
+Below is a model showing the writing, sale, and execution process of an uncovered call. The call's underlying is 1 BTC, its strike price is 50 XLM, the initial margin requirement is 15%, and the minimum margin requirement is 10%. These options are European style.
 
 ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/uncovered%20options-(v2).png "Uncovered Options")
 
@@ -158,29 +160,32 @@ Below is a basic model showing the writing, sale, execution, and exit of a 100XL
 Our forwards protocol operates almost the same way as our futures protocol. The main difference is that forwards do not settle daily. As a result, underlying values do not change. Therefore, we can use joint-preauthorized transactions in the exercise process instead of signing transactions with the repository.
 
 ##### Swaps
-We have an internal swaps protocol we plan to implement in the future.
+We have an internal swaps protocol we plan to implement in the future. It is a modified version of our futures protocol.
 
 ### Security:
 
 We use a variety of Stellar's features to ensure that our derivatives and margin accounts are secure.
 
-- *Locking Accounts and Preauthorizing Transactions*  
-In most of our protocols, we have accounts preauthorize transactions then lock themselves. This ensures that the only transactions they can post in the future are the preauthorized ones. We use this to lock funds in holding accounts until contract exercise.  
+- *Turing Signing Servers*
+Turning signing servers are a network of servers where applications can upload smart contracts and the server will assign a secret key to the contract. The application can then send transaction envelopes to the servers and the servers will sign the envelopes as long as they match the contract specifications. TSS provides OptionBlox with a method of adding complex business logic to transactions without requiring our organization to have any sort of control over the accounts involved in the transactions. This further decentralizes our system while maintaining high efficiency.
+
+- *Locking Accounts*
+In most of our protocols, we have accounts add TSS contracts as servers then lock themselves. This ensures that the only transactions they can post in the future are ones approved by the contracts. We use this to lock funds in holding accounts until contract exercise.  
 [More info](https://www.stellar.org/developers/guides/concepts/multi-sig.html)
 
-  - *Joint Preauthorized Transactions*  
-Joint-preauthorized transactions allow us to preauthorize transaction envelopes involving multiple source accounts. This prevents situations where preauthorized transactions for one holding account fail while the other account's preauthorized transactions succeed.
-
 - *Timebound Transactions*  
-In all of our protocols, we use timebound transactions in the exercise process to ensure certain transactions cannot be submitted early. Submitting some transactions early would disrupt the exercise process.  
+In all of our protocols, we use timebound transactions in the closing process to ensure certain transactions cannot be submitted early. Submitting some transactions early would disrupt the exercise process.  
 [More Info](https://www.stellar.org/developers/guides/concepts/multi-sig.html)
 
 - *Stellar Consensus Protocol*  
 Stellar's consensus protocol rejects transactions when they do not align with the correct ledger state. For example, a user could not fill a sell offer if their account lacked the necessary funds.  
 [More Info](https://www.stellar.org/developers/guides/concepts/scp.html)  
 
-- *Authorization Required Flag*  
-We have the option of adding an authorization required flag to our issuing accounts. This ensures that the only accounts which can hold our custom assets are accounts that we approve.
+- *Account Flags*  
+  - **Authorization Required Flag**
+  We use the authorization required flag for some of the custom derivative tokens we issue. This ensures that only users that should be allowed to hold certain assets can hold the assets.
+  - **Authorization Revokable Flag**
+  We use authroization revokable flags in combination with authorization required flags to allow us to permit accounts to hold custom assets only during certain transactions. For example, this is how we ensure that option buyers are only permitted to hold the LOCK token during the exercise transaction.
 
 - *SEP-0007 Integration*
 We do not want to serve as custodian for users keys due to the risks this entails. Instead we will use Stellar's SEP-0007 protocol to send transaction envelopes to users who can then add their signature in a trusted application or exchange.
@@ -197,6 +202,7 @@ Here are some non-native assets that are currently anchored by reputable parties
 - NGNT: Nigerian Naira anchor provided by [Cowrie](https://www.cowrie.exchange/).
 - GOLD: Gold anchor provided by [StellarMetals](stellarmetals.org).
 - ETH: Etherium anchor provided by [Papaya](https://apay.io/in).
+- DSTOQ: Equities anchored on Stellar by [DSTOQ](https://dstoq.com).
 
 More anchors can be viewed on [StellarX](https://www.stellarx.com/markets)
 
@@ -206,22 +212,23 @@ As Stellar's network grows we are confident that more anchors will materialize a
 
 At Adventum we are in the beginning stages of building the OptionBlox backend and platform. While we are doing this we will be searching for potential investors and partnerships.
 ##### Roadmap
-1. *Q1 2020*
-   - Begin Application Development
-   - Grow OptionBlox's Brand
-      - Put out content.
-      - Explore presenting at conferences.
-   - Attract New Talent (primarily in engineering)
-   
- 2. *Q2 2020*
-   - Finalize Investor Material
-      - Finalize Website.
-      - Finalize Investment Pitch.
+1. *Q3 2020*
+   - Finalize Backend Demo
+   - Finalize Web-App Demo
    - Continue Application Development
-   - Continue Building OptionBlox's Brand
-   - Begin Approaching Potential Investors and Partners
-      - We will begin looking for a seed investor.
-      - We are going to start reaching out to blockchain and finance orgs that may have a use for our platform.
-           - Focusing on Wallets, Exchanges, Market Makers, Hedge Funds, and Payment Platforms.
- 3. *Q3 2020*
-   - Launch MVP and Push it Open-Source
+   - Expand Engineering Team
+   - Begin Seed Funding Search
+   - Explore Wallet Parnerships
+ 2. *Q4 2020*
+   - Finalize Website
+   - Continue Application Development
+   - Expand Fundraising Efforts
+   - Launch Advisory Board
+   - Explore Further Ecosystem Partnerships
+ 3. *Q1 2021*
+   - Roll-out Full Demo/Alpha
+     - Functional Testnet Application
+   - Explore Market Maker Partnerships
+ 4. *Q2 2021*
+   - Launch Open-Beta for Covered Options
+   - Launch Closed Alpha for Uncovered Options and Futures
