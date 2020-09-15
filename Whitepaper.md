@@ -106,7 +106,7 @@ Unlike other blockchains, Stellar's network is truly decentralized. There is no 
 Stellar has a multi-asset functionality called anchoring that enables users to create custom assets on its ledger and tie them to real-world assets. We use this to tokenize derivatives and to write derivatives involving any asset.  
 - *Flexible Transaction System*  
 Stellar has a flexible transaction system that allows us to create derivatives and make them trust-free, tradeable, and safe.  
-- [Turing Signing Servers](insert link here)
+- *[Turing Signing Servers](https://github.com/tyvdh/turing-signing-server)*
 The Stellar Community is currently discussing implementing a new ecosystem feature called Turing Signing Servers. These are a decentralized network of servers that hold uploaded smart contracts which are associated with private keys. The servers will sign transactions with these private keys if the transactions meet the specifications of the contracts. We are planning on using this tool to manage some of the business logic surrounding contract execution and closure. However, if this feauture is not implemented we will simply use an open source repository to manage our execution business logic.
 
 [Stellar's website](https://www.stellar.org/developers/guides/walkthroughs/stellar-smart-contracts.html)
@@ -167,11 +167,12 @@ We have an internal swaps protocol we plan to implement in the future. It is a m
 We use a variety of Stellar's features to ensure that our derivatives and margin accounts are secure.
 
 - *Turing Signing Servers*
-Turning signing servers are a network of servers where applications can upload smart contracts and the server will assign a secret key to the contract. The application can then send transaction envelopes to the servers and the servers will sign the envelopes as long as they match the contract specifications. TSS provides OptionBlox with a method of adding complex business logic to transactions without requiring our organization to have any sort of control over the accounts involved in the transactions. This further decentralizes our system while maintaining high efficiency.
+Turning signing servers are a network of servers where applications can upload smart contracts and the server will assign a secret key to the contract. The application can then send transaction envelopes to the servers and the servers will sign the envelopes as long as they match the contract specifications. TSS provides OptionBlox with a method of adding complex business logic to transactions without requiring our organization to have any sort of control over the accounts involved in the transactions. This further decentralizes our system while maintaining high efficiency.\
+[More Info](https://github.com/tyvdh/turing-signing-server)
 
 - *Locking Accounts*
 In most of our protocols, we have accounts add TSS contracts as servers then lock themselves. This ensures that the only transactions they can post in the future are ones approved by the contracts. We use this to lock funds in holding accounts until contract exercise.  
-[More info](https://www.stellar.org/developers/guides/concepts/multi-sig.html)
+[More Info](https://www.stellar.org/developers/guides/concepts/multi-sig.html)
 
 - *Timebound Transactions*  
 In all of our protocols, we use timebound transactions in the closing process to ensure certain transactions cannot be submitted early. Submitting some transactions early would disrupt the exercise process.  
@@ -185,10 +186,11 @@ Stellar's consensus protocol rejects transactions when they do not align with th
   - **Authorization Required Flag**
   We use the authorization required flag for some of the custom derivative tokens we issue. This ensures that only users that should be allowed to hold certain assets can hold the assets.
   - **Authorization Revokable Flag**
-  We use authroization revokable flags in combination with authorization required flags to allow us to permit accounts to hold custom assets only during certain transactions. For example, this is how we ensure that option buyers are only permitted to hold the LOCK token during the exercise transaction.
+  We use authroization revokable flags in combination with authorization required flags to allow us to permit accounts to hold custom assets only during certain transactions. For example, this is how we ensure that option buyers are only permitted to hold the LOCK token during the exercise transaction.\
+[More Info](https://www.stellar.org/developers/guides/concepts/accounts.html#flags)
 
 - *SEP-0007 Integration*
-We do not want to serve as custodian for users keys due to the risks this entails. Instead we will use Stellar's SEP-0007 protocol to send transaction envelopes to users who can then add their signature in a trusted application or exchange.
+We do not want to serve as custodian for users keys due to the risks this entails. Instead we will use Stellar's SEP-0007 protocol to send transaction envelopes to users who can then add their signature in a trusted application or exchange.\
 [More Info](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0007.md)
 
 ### Anchors:
