@@ -53,6 +53,15 @@ The formentioned research paper also discussed data access fees that derivative 
 
 > Citation: Paulson-Luna, Riley. "The Financial Derivatives Ecosystem is Old - Decentralized Ledger Technology is its Fountain of Youth". 2020. ASSE 2020.
 
+
+OptionBlox also holds efficiency advantages over other decentralized derivative products. Most of these are built on Etherum which is a fundementally less efficient decentralized ledger than Stellar. The table below exhibits the fees that can be expected from leading decentralized financial derivative services built on Ethereum.
+
+**Ecosystem Fees Associated with Ethereum Based Derivatives**
+|Writing and Executing Derivatives|Trading all Derivatives|
+|---|---|
+|$5.50+|$1.10+|
+
+
 - *Market Accessibility*  
 OptionBlox increases market accessibility. Potential derivative users struggle to participate in derivative markets unless they live in developed nations. The decentralized nature of our system means our service is accessible to anyone with an internet connection. This accessibility creates open-access derivative markets.
 
