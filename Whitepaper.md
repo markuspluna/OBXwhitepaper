@@ -149,21 +149,21 @@ Our covered options are created using a network of accounts and preauthorized tr
 
 Below is a basic model showing the writing, sale, and exercise processes of a covered call with an underlying of 1 Bitcoin(BTC), and a strike price of 50 Lumens(XLM).
 
-![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/CoveredOptions(v2).png "Covered Options")
+![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/CoveredOptions(whitepaper)-no%20example.png "Covered Options")
 
 ##### Uncovered Options
 Our uncovered options use a similar process as our covered options. The key difference is the holding account also serves as a margin account for the seller. We use an open-source code repository to operate the logic surrounding margin requirements. Stellar's native operations are not complicated enough to allow us to calculate margin requirements within transactions. Using a repository also increases processing speed.  We create an encrypted keypair for the repository to accomplish this securely. We do not have access to this keypair. We then add the repository's secret key as a signer on the holding account. This allows the repository to sign pre-defined transactions for the holding account.
 
 Below is a model showing the writing, sale, and execution process of an uncovered call. The call's underlying is 1 BTC, its strike price is 50 XLM, the initial margin requirement is 15%, and the minimum margin requirement is 10%. These options are European style.
 
-![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/uncovered%20options-(v2).png "Uncovered Options")
+![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/UncoveredOptions(whitepaper)-no%20example.png "Uncovered Options")
 
 ##### Futures
 Our futures protocol expands on the uncovered options protocol. We use two margin and holding accounts, one for the buyer and one for the seller. We use the same open-source repository that we use with uncovered options to handle the margin and settlement operations. We settle our futures daily.
 
 Below is a basic model showing the writing, sale, execution, and exit of a 100XLM:1BTC future with a 15% initial margin requirement and a 10% minimum margin requirement.
 
-![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/futures(v2).png "Futures")
+*Diagram is currently under revision
 
 ##### Forwards
 Our forwards protocol operates almost the same way as our futures protocol. The main difference is that forwards do not settle daily. As a result, underlying values do not change. Therefore, we can use joint-preauthorized transactions in the exercise process instead of signing transactions with the repository.
