@@ -175,11 +175,11 @@ We have an internal swaps protocol we plan to implement in the future. It is a m
 
 We use a variety of Stellar's features to ensure that our derivatives and margin accounts are secure.
 
-- *Turing Signing Servers*
+- *Turing Signing Servers*\
 Turning signing servers are a network of servers where applications can upload smart contracts and the server will assign a secret key to the contract. The application can then send transaction envelopes to the servers and the servers will sign the envelopes as long as they match the contract specifications. TSS provides OptionBlox with a method of adding complex business logic to transactions without requiring our organization to have any sort of control over the accounts involved in the transactions. This further decentralizes our system while maintaining high efficiency.\
 [More Info](https://github.com/tyvdh/turing-signing-server)
 
-- *Locking Accounts*
+- *Locking Accounts*\
 In most of our protocols, we have accounts add TSS contracts as servers then lock themselves. This ensures that the only transactions they can post in the future are ones approved by the contracts. We use this to lock funds in holding accounts until contract exercise.  
 [More Info](https://www.stellar.org/developers/guides/concepts/multi-sig.html)
 
