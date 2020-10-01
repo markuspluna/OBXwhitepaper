@@ -177,10 +177,14 @@ We have an internal swaps protocol we plan to implement in the future. It is a m
 
 #### Protocol Details
 
-###### Partial Contracts
-
 ###### Contract Sizing
+Contract sizes are standardized. This means that options and futures contracts have uniform underlying amounts. For example, all Ethereum options and futures will have an underlying of 1 ETH. This standardization helps maintain contract volume.
 
+###### Partial Contracts
+Tokenizing derivatives allows OptionBlox users to write partial derivative contracts. Users can write and sell fractions of contracts and they will just be sent an equivalent portion of the contract token(s). This is a crucial functionality to maintain standardized contract sizes but allow users with less capital to still utilize the derivatives ecosystem.
+
+###### Liquidation Prodecures
+Uncovered Options and Futures require margin balances. If the margin balances associated with the derivatives falls below the liquidation level the contract position will be automatically liquidated. The liquidation will be enforced by a turing signing server contract and funded by a liquidity pool. Liquity pool participants will recieve the liquidated positions remaining margin balance as incentive for funding the liquidation. 
 
 ### Security:
 
