@@ -185,7 +185,13 @@ Contract sizes are standardized. This means that options and futures contracts h
 Tokenizing derivatives allows OptionBlox users to write partial derivative contracts. Users can write and sell fractions of contracts and they will just be sent an equivalent portion of the contract token(s). This is a crucial functionality to maintain standardized contract sizes but allows users with less capital to still utilize the derivatives ecosystem.
 
 ###### Liquidation Prodecures
-Uncovered Options and Futures require margin balances. If the margin balances associated with the derivatives fall below the liquidation level the contract position will be automatically liquidated. The liquidation will be enforced by a turing-signing-server contract and funded by a liquidity pool. Liquidity pool participants will receive the liquidated positions remaining margin balance as an incentive for funding the liquidation. 
+OptionBlox’s Uncovered Options and Futures protocols require position liquidation when the position holders become delinquent on their margin requirements or fail to provide the necessary underlying to complete contract settlement. In these situations the protocols will attempt to liquidate positions on the Stellar DEX. However, if low volume makes this impossible, we use a TSS managed liquidity pool to exit the position. 
+
+![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/UncoveredOptionLiquidation(whitepaper)-no%20example.png "Insufficient Margin Liquidation (option)")
+![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/FuturesNoUnderlying(whitepaper)-no%20example.png "Insufficient Underlying(future)")
+
+Our liquidity pool is made up of user-provided funds and managed by a TSS contract. Users will receive tokens in exchange for the funds they contribute, the tokens represent their contribution and govern the percentage of liquidation profits they receive. Because of the margin requirements for these contracts it will never be in the position holders economic interest to allow liquidation, and there will always be an economic incentive to liquidate the position. Profits from liquidating delinquent positions will be paid out to liquidity pool financiers on a weekly basis. 
+
 
 ### Security:
 
