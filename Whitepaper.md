@@ -259,3 +259,4 @@ At Adventum we are in the beginning stages of building the OptionBlox backend an
  4. *Q2 2021*
    - Launch Open-Beta for Covered Options
    - Launch Closed Alpha for Uncovered Options and Futures
+   - Launch Closed Alpha for OTC contract development tool
