@@ -29,6 +29,7 @@ A derivative is a contract between two parties. Its value is based on an agreed-
 The incumbent derivatives market suffers from a large amount of friction. It requires contract intermediaries to provide access to the market, facilitate trades, and lower counterparty risk. These additional parties cause inefficiency which creates costs that get passed on to investors. By facilitating derivatives on Stellar's decentralized network, OptionBlox eliminates the need for contract intermediaries. To illustrate the massive efficiency increase this provides we compare post-trade process flows from the traditional derivatives ecosystem to post-trade process flows from the ecosystem OptionBlox enables.\
 **Traditional ecosystem post-trade processing**\
 ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/post-trade%20processing%20traditional.JPG "Traditional Post-Trade")
+> Citation: ISDA. "The Future of Derivatives Processing and Market Infrastructure"ISDA Whitepaper. 2016.
 
 **OptionBlox ecosystem post-trade processing**\
 ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/OBX%20post-trade%20Process%20Flow%20(option-trade).png "OBX Post-Trade")
