@@ -27,16 +27,16 @@ OptionBlox is a platform for writing, trading, and exercising financial derivati
 
 A derivative is a financial contract between two parties. Its value is based on an agreed-upon asset or a set of assets. The most common forms of financial derivatives are futures, options, forwards, and swaps.
 
-- Futures:   
+- *Futures*:   
 Futures are contracts between two parties to buy/sell an agreed-upon quantity of an asset at a set price at an established future time. Futures are commonly used to hedge against price movement by the underlying asset, as a means to increase leverage, or as a means of gaining exposure to rates. Futures are typically settled daily, so at the end of each day, an investor's profits or losses are realized.
 
-- Options:   
+- *Options*:   
 Options are contracts between two parties, a writer and a buyer. The contract gives the buyer the option, but not the obligation, to buy or sell an asset at an agreed-upon price until the option expires. If the buyer decides to exercise this right, the option writer would buy or sell the asset. Options can be either puts or calls. A call option allows its owner to buy the underlying asset at the agreed-upon "strike price", and a put option allows its owner to sell the underlying asset at the strike price. Common uses of options are hedging, increasing leverage, and income generation.
 
-- Forwards:  
+- *Forwards*:  
 Forwards are similar to futures. The main difference is that they are not settled until the expiration date. They are typically highly specified to the involved parties' needs.
 
-- Swaps:  
+- *Swaps*:  
 Swaps are similar to forwards. The difference is that instead of one exchange of assets at the expiration date, the parties swap assets twice. Once at the beginning of the contract and once at the end. These exchanges are referred to as the "near leg" and the "far leg". Like forwards, these contracts are typically highly specified to the involved parties' needs.
 #### Value Proposition:  
 
