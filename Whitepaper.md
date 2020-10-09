@@ -14,7 +14,7 @@ OptionBlox is a platform for writing, trading, and exercising financial derivati
 - [Introduction](https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#introduction)
 - [Explination of Derivatives](https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#derivatives)
 - [Value Proposition](https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#value%20proposition)
-- [Stellar - OptionBlox's Decentralized Ledger]((https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#stellar%20optionBlox's%20chosen%20decentralized%20ledger)
+- [Stellar - OptionBlox's Decentralized Ledger](https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#stellar---optionbloxs-chosen-decentralized-ledger)
 - [Use Cases](https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#use%20cases)
 - [OptionBlox's Derivative Solutions](https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#optionblox's%20derivative%20solutions%20)
 - [Protocol Details](https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#protocol%20details)
