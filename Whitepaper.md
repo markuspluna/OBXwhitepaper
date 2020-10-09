@@ -8,13 +8,13 @@ Alexander Mootz: alexjmootz@gmail.com
 
 ### Abstract
 
-OptionBlox is a platform for writing, trading, and exercising financial derivatives on Stellar's decentralized ledger. Processing derivatives on a multi-asset decentralized ledger (like Stellar's) increases market efficiency, flexibility, and accessibility by eliminating the need for market intermediaries. Utilizing these improvements, OptionBlox supports derivatives involving any asset pair, charges less than 1 cent per contract, and can be used by anyone in the world. OptionBlox uses a unique smart contract protocol which allows for trust-free derivative contract writing and exercising. Additionally, our protocol tokenizes derivative contracts, allowing them to be traded on any centralized or decentralized exchange, and even stored offline. Overall, OptionBlox makes vast improvements on incumbent derivative processing platforms and enables equitable access to a flexible, efficient derivative market built on Stellar. 
+OptionBlox is a platform for writing, trading, and exercising financial derivatives on Stellar's decentralized ledger. OptionBlox uses a unique smart contract protocol to make these derivatives trust-free as well as ledger based. This transformation eliminates the need for market intermediaries, increasing ecosystem efficiency, flexibility, and accessibility. With this protocol, OptionBlox supports derivatives involving any asset pair, charges less than 1 cent per contract, and can be used by anyone in the world. Additionally, our protocol tokenizes derivative contracts, allowing them to be traded on any centralized or decentralized exchange, and even stored offline. Overall, OptionBlox makes vast improvements on incumbent derivative processing platforms and enables equitable access to a flexible, efficient derivative market built on Stellar. 
 
 ### Introduction:
 
 #### Derivatives:
 
-A derivative is a contract between two parties. Its value is based on an agreed-upon asset or a set of assets. The most common forms of financial derivatives are futures, options, forwards, and swaps.
+A derivative is a financial contract between two parties. Its value is based on an agreed-upon asset or a set of assets. The most common forms of financial derivatives are futures, options, forwards, and swaps.
 
 - Futures are contracts between two parties to buy/sell an agreed-upon quantity of an asset at a set price at an established future time. Futures are commonly used to hedge against price movement by the underlying asset, as a means to increase leverage, or as a means of gaining exposure to rates. Futures are typically settled daily, so at the end of each day, an investor's profits or losses are realized.
 
@@ -25,13 +25,14 @@ A derivative is a contract between two parties. Its value is based on an agreed-
 - Swaps are similar to forwards. The difference is that instead of one exchange of assets at the expiration date, the parties swap assets twice. Once at the beginning of the contract and once at the end. These exchanges are referred to as the "near leg" and the "far leg". Like forwards, these contracts are typically highly specified to the involved parties' needs.
 #### Value Proposition:  
 
-##### *Increased Efficiency*  
+##### Increased Efficiency  
 The incumbent derivatives market suffers from a large amount of friction. It requires contract intermediaries to provide access to the market, facilitate trades, and lower counterparty risk. These additional parties cause inefficiency which creates costs that get passed on to investors. By facilitating derivatives on Stellar's decentralized network, OptionBlox eliminates the need for contract intermediaries. To illustrate the massive efficiency increase this provides we compare post-trade process flows from the traditional derivatives ecosystem to post-trade process flows from the ecosystem OptionBlox enables.\
-**Traditional ecosystem post-trade processing**\
+\
+*Traditional ecosystem post-trade processing*\
 ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/post-trade%20processing%20traditional.JPG "Traditional Post-Trade")
 > Citation: ISDA. "The Future of Derivatives Processing and Market Infrastructure". ISDA Whitepaper. 2016.
 
-**OptionBlox ecosystem post-trade processing**\
+*OptionBlox ecosystem post-trade processing*\
 ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/OBX%20post-trade%20Process%20Flow%20(option-trade).png "OBX Post-Trade")
 
 A research paper that covered Stellar-based financial derivatives measured the monetary impact of the increased efficiency that Stellar-based derivatives provide. To measure the costs that get passed to users in the traditional derivatives ecosystem, the paper measured central parties' revenue-per-contract. To measure the costs associated with Stellar-based derivatives, they processed derivatives on-ledger and measured the network fees. Their findings are summarized in the tables below.\
@@ -45,39 +46,39 @@ OptionBlox also holds efficiency advantages over other decentralized derivative 
 Tables exhibiting the formentioned efficiency increases are exhibited below:\
 
 
-**Ecosystem Fees Associated with Stellar Based Derivatives**
+*Ecosystem Fees Associated with Stellar Based Derivatives*
 
 |Writing and Executing Options|Writing and Executing Futures|Writing and Executing Swaps|Trading all Derivatives|
 |---|---|---|---|
 |$0.000261|$0.000319|$0.0004234|$0.000029|
 
-**Ecosystem Fees Associated with the Traditional Derivative Ecosystem**
+*Ecosystem Fees Associated with the Traditional Derivative Ecosystem*
 
 |CBOE Option Revenue Per Contract|CBOE Futures Revenue Per Contract|CME Average Revenue Per Contract|
 |---|---|---|
 |$0.235|$1.759|$0.725|
 
-**Live Data Fees in the Traditional Derivative Ecosystem**
+*Live Data Fees in the Traditional Derivative Ecosystem*
 
 |CBOE Live Data Fees|CME Live Data Fees|
 |---|---|
 |$105/month|Individual - $15,000
 ||Enterprise - $100,000|
 
-**Ecosystem Fees Associated with Ethereum Based Derivatives**
+*Ecosystem Fees Associated with Ethereum Based Derivatives*
 |Writing and Executing Derivatives|Trading all Derivatives|
 |---|---|
 |$5.50+|$1.10+|
 
 > Citation: Paulson-Luna, Riley. "The Financial Derivatives Ecosystem is Old - Decentralized Ledger Technology is its Fountain of Youth". 2020. ASSE 2020.
 
-##### *Market Accessibility*  
-OptionBlox increases market accessibility. Potential derivative users struggle to participate in derivative markets unless they live in developed nations. The decentralized nature of our system means our service is accessible to anyone with an internet connection. This accessibility creates open-access derivative markets.
+##### Market Accessibility  
+OptionBlox uses DLT to make huge improvements in derivative ecosystem accessibility. The decentralized nature of our system means our service is accessible to anyone with an internet connection. This is a huge improvement over the current state of the derivatives ecosystem which a minute portion of the world has efficient access to. The incumbent derivative ecosystem’s dependence on central parties makes it impossible for it to serve a wider market. Since OptionBlox uses DLT to facilitate derivatives instead of central parties, it does not suffer from these limitations. Accessibility is core to OptionBlox’s offering, we want our platform to enable equitable derivative ecosystem access. With OptionBlox’s innovations in accessibility, flexibility, and efficiency we believe it will do so. 
 
-###### *Flexibility*  
+##### Flexibility  
 Stellar's Anchor system combined with the flexibility of OptionBlox allows users to write derivatives with any asset. People with use cases for derivatives that are not currently supported by the traditional market can use our solution to write and trade derivatives that better suit their requirements.  
 
-##### *Tokenized Derivatives*
+- *Tokenized Derivatives*:  
 Derivatives written with OptionBlox are tokenized. Tokenized derivatives are essential in the decentralized ledger technology space. Tokenization allows our derivatives to be traded on any cryptocurrency exchange and stored anywhere. A user could write a derivative on our exchange, then transfer it to their Binance account and sell it on their market. A derivative buyer could take their newly purchased derivative tokens and transfer them to their Ledger Nano S for added security. This flexibility is essential due to the fragmentation of the decentralized ledger technology space. It also serves to further decentralize OptionBlox. 
 
 #### What Decentralized Ledger Technology Provides:
