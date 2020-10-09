@@ -1,6 +1,6 @@
 ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/obx%20logo.png "Logo Title Text 1")
 # OPTIONBLOX
-## A Derivatives Writing and Trading Solution Built on Stellar
+## A Decentralized Derivatives Solution Built on Stellar
 
 Markus Paulson-Luna: markuspaulsonluna@gmail.com  
 Andrew Pierskalla: piers274@gmail.com  
@@ -13,11 +13,10 @@ OptionBlox is a platform for writing, trading, and exercising financial derivati
 ### Table of Contents:
 - [Introduction](https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#introduction)
 - [Explination of Derivatives](https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#derivatives)
-- [Value Proposition](https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#value%20proposition)
+- [Value Proposition](https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#value-proposition)
 - [Stellar - OptionBlox's Decentralized Ledger](https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#stellar---optionbloxs-chosen-decentralized-ledger)
-- [Use Cases](https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#use%20cases)
-- [OptionBlox's Derivative Solutions](https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#optionblox's%20derivative%20solutions%20)
-- [Protocol Details](https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#protocol%20details)
+- [Use Cases](https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#use-cases)
+- [OptionBlox's Derivative Protocols](https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#optionbloxs-derivative-protocols)
 - [Security Measures](https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#security)
 - [Roadmap](https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#roadmap)
 - [Glossary](https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#glossary)
@@ -167,7 +166,7 @@ Carbon emissions are a crucial issue today. One proposed way to handle them is b
 
    Xiao is an executive at a major battery producer. Business is booming, and she wants to expand operations, however, her company needs to continually purchase more carbon credits to do so. As a result, future carbon credit price increases are a risk for this expansion. Xiao does some research and discovers OptionBlox. She realizes she can use our product to purchase carbon credit call options, hedging her company against the risk of carbon credit price increases. Her company purchases the calls and goes ahead with the expansion. 
   
-### OptionBlox's Derivative Solutions:
+### OptionBlox's Derivative Protocols:
 OptionBlox features a range of tradeable decentralized derivative products
 ##### Covered Options
 Our covered options are created using a network of accounts and preauthorized transactions. This protocol is based completely on Stellar's network and can operate without any input besides users submitting transactions. These options are European style.  
