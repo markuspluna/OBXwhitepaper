@@ -240,7 +240,7 @@ Stellar's consensus protocol rejects transactions when they do not align with th
   We use authorization revokable flags in combination with authorization required flags to allow us to permit accounts to hold custom assets only during certain transactions. For example, this is how we ensure that option buyers are only permitted to hold the LOCK token during the exercise transaction.\
 [More Info](https://www.stellar.org/developers/guides/concepts/accounts.html#flags)
 
-- *SEP-0007 Integration*
+- *SEP-0007 Integration*\
 We do not want to serve as custodians for users' keys due to the risks this entails. Instead, we will use Stellar's SEP-0007 protocol to send transaction envelopes to users who can then add their signature in a trusted application or exchange.\
 [More Info](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0007.md)
 
