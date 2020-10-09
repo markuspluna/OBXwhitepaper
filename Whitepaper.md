@@ -28,13 +28,17 @@ OptionBlox is a platform for writing, trading, and exercising financial derivati
 
 A derivative is a financial contract between two parties. Its value is based on an agreed-upon asset or a set of assets. The most common forms of financial derivatives are futures, options, forwards, and swaps.
 
-- Futures are contracts between two parties to buy/sell an agreed-upon quantity of an asset at a set price at an established future time. Futures are commonly used to hedge against price movement by the underlying asset, as a means to increase leverage, or as a means of gaining exposure to rates. Futures are typically settled daily, so at the end of each day, an investor's profits or losses are realized.
+- Futures:   
+Futures are contracts between two parties to buy/sell an agreed-upon quantity of an asset at a set price at an established future time. Futures are commonly used to hedge against price movement by the underlying asset, as a means to increase leverage, or as a means of gaining exposure to rates. Futures are typically settled daily, so at the end of each day, an investor's profits or losses are realized.
 
-- Options are contracts between two parties, a writer and a buyer. The contract gives the buyer the option, but not the obligation, to buy or sell an asset at an agreed-upon price until the option expires. If the buyer decides to exercise this right, the option writer would buy or sell the asset. Options can be either puts or calls. A call option allows its owner to buy the underlying asset at the agreed-upon "strike price", and a put option allows its owner to sell the underlying asset at the strike price. Common uses of options are hedging, increasing leverage, and income generation.
+- Options:   
+Options are contracts between two parties, a writer and a buyer. The contract gives the buyer the option, but not the obligation, to buy or sell an asset at an agreed-upon price until the option expires. If the buyer decides to exercise this right, the option writer would buy or sell the asset. Options can be either puts or calls. A call option allows its owner to buy the underlying asset at the agreed-upon "strike price", and a put option allows its owner to sell the underlying asset at the strike price. Common uses of options are hedging, increasing leverage, and income generation.
 
-- Forwards are similar to futures. The main difference is that they are not settled until the expiration date. They are typically highly specified to the involved parties' needs.
+- Forwards:  
+Forwards are similar to futures. The main difference is that they are not settled until the expiration date. They are typically highly specified to the involved parties' needs.
 
-- Swaps are similar to forwards. The difference is that instead of one exchange of assets at the expiration date, the parties swap assets twice. Once at the beginning of the contract and once at the end. These exchanges are referred to as the "near leg" and the "far leg". Like forwards, these contracts are typically highly specified to the involved parties' needs.
+- Swaps:  
+Swaps are similar to forwards. The difference is that instead of one exchange of assets at the expiration date, the parties swap assets twice. Once at the beginning of the contract and once at the end. These exchanges are referred to as the "near leg" and the "far leg". Like forwards, these contracts are typically highly specified to the involved parties' needs.
 #### Value Proposition:  
 
 ##### Increased Efficiency  
@@ -194,13 +198,13 @@ We have an internal swaps protocol we plan to implement in the future. It is a m
 
 #### Protocol Details
 
-###### Contract Sizing
+##### Contract Sizing
 Contract sizes are standardized. This means that options and futures contracts have uniform underlying amounts. For example, all Ethereum options and futures will have an underlying of 1 ETH. This standardization helps maintain contract volume.
 
-###### Partial Contracts
+##### Partial Contracts
 Tokenizing derivatives allows OptionBlox users to write partial derivative contracts. Users can write and sell fractions of contracts and they will just be sent an equivalent portion of the contract token(s). This is a crucial functionality to maintain standardized contract sizes but allows users with less capital to still utilize the derivatives ecosystem.
 
-###### Liquidation Prodecures
+##### Liquidation Prodecures
 OptionBlox’s Uncovered Options and Futures protocols require position liquidation when the position holders become delinquent on their margin requirements or fail to provide the necessary underlying to complete contract settlement. In these situations the protocols will attempt to liquidate positions on the Stellar DEX. However, if low volume makes this impossible, we use a TSS managed liquidity pool to exit the position. 
 
 ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/UncoveredOptionLiquidation(whitepaper)-no%20example.png "Insufficient Margin Liquidation (option)")
@@ -230,9 +234,9 @@ Stellar's consensus protocol rejects transactions when they do not align with th
 [More Info](https://www.stellar.org/developers/guides/concepts/scp.html)  
 
 - *Account Flags*  
-  - **Authorization Required Flag**
+  - **Authorization Required Flag**  
   We use the authorization required flag for some of the custom derivative tokens we issue. This ensures that only users that should be allowed to hold certain assets can hold the assets.
-  - **Authorization Revokable Flag**
+  - **Authorization Revokable Flag**  
   We use authorization revokable flags in combination with authorization required flags to allow us to permit accounts to hold custom assets only during certain transactions. For example, this is how we ensure that option buyers are only permitted to hold the LOCK token during the exercise transaction.\
 [More Info](https://www.stellar.org/developers/guides/concepts/accounts.html#flags)
 
