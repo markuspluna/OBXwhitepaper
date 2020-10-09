@@ -33,7 +33,7 @@ The incumbent derivatives market suffers from a large amount of friction. It req
 > Citation: ISDA. "The Future of Derivatives Processing and Market Infrastructure". ISDA Whitepaper. 2016.
 
 *OptionBlox ecosystem post-trade processing*\
-![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/OBX%20post-trade%20Process%20Flow%20(option-trade).png "OBX Post-Trade")
+![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/OBXpost-tradeProcessFlow%20(option-trade).png "OBX Post-Trade")
 
 A research paper that covered Stellar-based financial derivatives measured the monetary impact of the increased efficiency that Stellar-based derivatives provide. To measure the costs that get passed to users in the traditional derivatives ecosystem, the paper measured central parties' revenue-per-contract. To measure the costs associated with Stellar-based derivatives, they processed derivatives on-ledger and measured the network fees. Their findings are summarized in the tables below.\
  \
