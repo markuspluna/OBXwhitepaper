@@ -10,6 +10,18 @@ Alexander Mootz: alexjmootz@gmail.com
 
 OptionBlox is a platform for writing, trading, and exercising financial derivatives on Stellar's decentralized ledger. OptionBlox uses a unique smart contract protocol to make these derivatives trust-free as well as ledger based. This transformation eliminates the need for market intermediaries, increasing ecosystem efficiency, flexibility, and accessibility. With this protocol, OptionBlox supports derivatives involving any asset pair, charges less than 1 cent per contract, and can be used by anyone in the world. Additionally, our protocol tokenizes derivative contracts, allowing them to be traded on any centralized or decentralized exchange, and even stored offline. Overall, OptionBlox makes vast improvements on incumbent derivative processing platforms and enables equitable access to a flexible, efficient derivative market built on Stellar. 
 
+### Table of Contents:
+- [Introduction](https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#introduction)
+- [Explination of Derivatives](https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#derivatives)
+- [Value Proposition](https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#value%20proposition)
+- [Stellar - OptionBlox's Decentralized Ledger]((https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#stellar%20optionBlox's%20chosen%20decentralized%20ledger)
+- [Use Cases](https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#use%20cases)
+- [OptionBlox's Derivative Solutions](https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#optionblox's%20derivative%20solutions%20)
+- [Protocol Details](https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#protocol%20details)
+- [Security Measures](https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#security)
+- [Roadmap](https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#roadmap)
+- [Glossary](https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#glossary)
+
 ### Introduction:
 
 #### Derivatives:
@@ -73,13 +85,13 @@ Tables exhibiting the formentioned efficiency increases are exhibited below:\
 > Citation: Paulson-Luna, Riley. "The Financial Derivatives Ecosystem is Old - Decentralized Ledger Technology is its Fountain of Youth". 2020. ASSE 2020.
 
 ##### Market Accessibility  
-OptionBlox uses DLT to make huge improvements in derivative ecosystem accessibility. The decentralized nature of our system means our service is accessible to anyone with an internet connection. This is a huge improvement over the current state of the derivatives ecosystem which a minute portion of the world has efficient access to. The incumbent derivative ecosystem’s dependence on central parties makes it impossible for it to serve a wider market. Since OptionBlox uses DLT to facilitate derivatives instead of central parties, it does not suffer from these limitations. Accessibility is core to OptionBlox’s offering, we want our platform to enable equitable derivative ecosystem access. With OptionBlox’s innovations in accessibility, flexibility, and efficiency we believe it will do so. 
+OptionBlox uses DLT to make huge improvements in derivative ecosystem accessibility. The decentralized nature of our system means our service is accessible to anyone with an internet connection. This is a huge improvement over the current state of the derivatives ecosystem where only a minute portion of the world has efficient ecosystem access. The incumbent derivative ecosystem’s dependence on central parties makes it impossible for it to serve a wider market. Since OptionBlox uses DLT to facilitate derivatives instead of central parties, it does not suffer from these limitations. Accessibility is core to OptionBlox’s offering, we want our platform to enable equitable derivative ecosystem access. With OptionBlox’s innovations in accessibility, flexibility, and efficiency we believe it will do so. 
 
 ##### Flexibility  
-Stellar's Anchor system combined with the flexibility of OptionBlox allows users to write derivatives with any asset. People with use cases for derivatives that are not currently supported by the traditional market can use our solution to write and trade derivatives that better suit their requirements.  
+OptionBlox provides unparalleled flexibility, allowing users to accomplish any derivative use case. If our standardized derivatives do not meet our users needs, OptionBlox lets users easily write OTC derivatives with custom contract specifications. Additionally, derivatives written with OptionBlox use Stellar’s [Anchor](https://www.stellar.org/developers/guides/concepts/assets.html) system to manage contract underlying assets. Since the Anchor system can support any asset, our contracts can be written with any underlying asset.
 
 - *Tokenized Derivatives*:  
-Derivatives written with OptionBlox are tokenized. Tokenized derivatives are essential in the decentralized ledger technology space. Tokenization allows our derivatives to be traded on any cryptocurrency exchange and stored anywhere. A user could write a derivative on our exchange, then transfer it to their Binance account and sell it on their market. A derivative buyer could take their newly purchased derivative tokens and transfer them to their Ledger Nano S for added security. This flexibility is essential due to the fragmentation of the decentralized ledger technology space. It also serves to further decentralize OptionBlox. 
+OptionBlox also uses the Anchor system to tokenize users derivative contracts. Tokenized derivatives are essential in the decentralized ledger technology space. Tokenization allows our derivatives to be traded on any cryptocurrency exchange and stored anywhere. A user could write a derivative on our exchange, then transfer it to their Binance account and sell it on their market. A derivative buyer could take their newly purchased derivative tokens and transfer them to their Ledger Nano S for added security. This flexibility is essential due to the fragmentation of the decentralized ledger technology space. It also serves to further decentralize OptionBlox. In addition to improving trading and storage flexibility, tokenization allows users to write partial derivatives, enabling users with different levels of wealth to take advantage of derivatives while still allowing us to retain standardized derivative sizes. For example, our Ethereum options are standardized to have an underlying of 1 ETH in order to preserve contract volume, if a user wants to write this option but cannot fund the entire 1 ETH underlying, our partial derivative capability will allow them to write a fractional derivative. They will provide us with a fraction of 1 ETH to fund their underlying and will receive a proportional fraction of an ETH option token. 
 
 #### What Decentralized Ledger Technology Provides:
 
@@ -94,9 +106,9 @@ Decentralized networks are incredibly accessible. They are run by a network of n
 - *One source of truth*  
 The unquestionable nature of a decentralized network, combined with its accessibility means participants don't need to pay for or share market data to maintain an accurate source of information. This removes another source of friction and cost.
 
-#### Our Decentralized Ledger:
+#### Stellar - OptionBlox's Chosen Decentralized Ledger:
 
-We use Stellar's decentralized ledger to support our protocol.
+OptionBlox uses Stellar's decentralized ledger to support it's protocol.
 
 In Stellar’s words:  
 
@@ -110,11 +122,7 @@ For more general information visit: [Stellar's Website](https://www.stellar.org/
 For more information on how the nodes validate transactions see: [Stellar Consensus Protocol](https://www.stellar.org/developers/guides/concepts/scp.html).  
 For more information on how we interact with Stellar’s network visit: [Network Overview](https://www.stellar.org/developers/guides/get-started/index.html).
 
-Terms:  
-- *Smart Contract:* A protocol to digitally facilitate, verify, or enforce the performance of a contract.  
-- *Keypair:* When an account is created on Stellar's ledger, they are assigned a public and a private key. The private key is used to sign transactions and the public key is used to identify the account. These two keys make up the account's keypair.
-
-#### Building on Stellar:
+##### Building on Stellar:
 
 Stellar’s focus on financial applications has made it the ideal network to develop OptionBlox on. \
 Characteristics of the Stellar network crucial to OptionBlox:
@@ -155,8 +163,7 @@ Carbon emissions are a crucial issue today. One proposed way to handle them is b
 
    Xiao is an executive at a major battery producer. Business is booming, and she wants to expand operations, however, her company needs to continually purchase more carbon credits to do so. As a result, future carbon credit price increases are a risk for this expansion. Xiao does some research and discovers OptionBlox. She realizes she can use our product to purchase carbon credit call options, hedging her company against the risk of carbon credit price increases. Her company purchases the calls and goes ahead with the expansion. 
   
-### OptionBlox's Solutions:
-#### Derivatives:
+### OptionBlox's Derivative Solutions:
 OptionBlox features a range of tradeable decentralized derivative products
 ##### Covered Options
 Our covered options are created using a network of accounts and preauthorized transactions. This protocol is based completely on Stellar's network and can operate without any input besides users submitting transactions. These options are European style.  
@@ -250,10 +257,7 @@ More anchors can be viewed on [StellarX](https://www.stellarx.com/markets)
 
 As Stellar's network grows we are confident that more anchors will materialize and expand OptionBlox's functionality.
 
-### Next Steps:
-
-At Adventum we are in the beginning stages of building the OptionBlox backend and platform. While we are doing this we will be searching for potential investors and partnerships.
-##### Roadmap
+### Roadmap
 1. *Q3 2020*
    - Finalize Backend Demo
    - Finalize Web-App Demo
@@ -275,3 +279,8 @@ At Adventum we are in the beginning stages of building the OptionBlox backend an
    - Launch Open-Beta for Covered Options
    - Launch Closed Alpha for Uncovered Options and Futures
    - Launch Closed Alpha for OTC contract development tool
+   
+### Glossary
+Terms:  
+- *Smart Contract:* A protocol to digitally facilitate, verify, or enforce the performance of a contract.  
+- *Keypair:* When an account is created on Stellar's ledger, they are assigned a public and a private key. The private key is used to sign transactions and the public key is used to identify the account. These two keys make up the account's keypair.
