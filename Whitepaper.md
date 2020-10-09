@@ -43,11 +43,11 @@ Swaps are similar to forwards. The difference is that instead of one exchange of
 ##### Increased Efficiency  
 The incumbent derivatives market suffers from a large amount of friction. It requires market intermediaries to provide access to the market, facilitate trades, and lower counterparty risk. These additional parties cause inefficiency which creates costs that get passed on to investors. By facilitating derivatives on Stellar's decentralized network, OptionBlox eliminates the need for contract intermediaries. To illustrate the massive efficiency increase this provides we compare post-trade process flows from the traditional derivatives ecosystem to post-trade process flows from the ecosystem OptionBlox enables.\
 \
-*Traditional ecosystem post-trade processing*\
+**Traditional ecosystem post-trade processing**\
 ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/post-trade%20processing%20traditional.JPG "Traditional Post-Trade")
 > Citation: ISDA. "The Future of Derivatives Processing and Market Infrastructure". ISDA Whitepaper. 2016.
 
-*OptionBlox ecosystem post-trade processing*\
+**OptionBlox ecosystem post-trade processing**\
 ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/OBXpost-tradeProcessFlow%20(option-trade).png "OBX Post-Trade")
 
 A research paper that covered Stellar-based financial derivatives measured the monetary impact of the increased efficiency that Stellar-based derivatives provide. To measure the costs that get passed to users in the traditional derivatives ecosystem, the paper measured central parties' revenue-per-contract. To measure the costs associated with Stellar-based derivatives, they processed derivatives on-ledger and measured the network fees. Their findings are summarized in the tables below.\
@@ -61,26 +61,23 @@ OptionBlox also holds efficiency advantages over other decentralized derivative 
 Tables exhibiting the formentioned efficiency increases are exhibited below:\
 
 
-*Ecosystem Fees Associated with Stellar Based Derivatives*
-
+**Ecosystem Fees Associated with Stellar Based Derivatives**
 |Writing and Executing Options|Writing and Executing Futures|Writing and Executing Swaps|Trading all Derivatives|
 |---|---|---|---|
 |$0.000261|$0.000319|$0.0004234|$0.000029|
 
-*Ecosystem Fees Associated with the Traditional Derivative Ecosystem*
-
+**Ecosystem Fees Associated with the Traditional Derivative Ecosystem**
 |CBOE Option Revenue Per Contract|CBOE Futures Revenue Per Contract|CME Average Revenue Per Contract|
 |---|---|---|
 |$0.235|$1.759|$0.725|
 
-*Live Data Fees in the Traditional Derivative Ecosystem*
-
+**Live Data Fees in the Traditional Derivative Ecosystem**
 |CBOE Live Data Fees|CME Live Data Fees|
 |---|---|
 |$105/month|Individual - $15,000
 ||Enterprise - $100,000|
 
-*Ecosystem Fees Associated with Ethereum Based Derivatives*
+**Ecosystem Fees Associated with Ethereum Based Derivatives**
 |Writing and Executing Derivatives|Trading all Derivatives|
 |---|---|
 |$5.50+|$1.10+|
@@ -100,13 +97,13 @@ OptionBlox also uses the Anchor system to tokenize users derivative contracts. T
 
 Using decentralized ledger technology to facilitate derivatives allows us to make OptionBlox more flexible and efficient than the incumbent derivative processing system, while still retaining a similar level of security. A decentralized system provides:
 
-- *Proof of ownership*  
+- *Proof of ownership*:  
 The public and collective nature of a decentralized ledger prevents individuals from misrepresenting what they own on the ledger, including assets and transactions. This allows us to verify asset ownership, and to ensure derivatives are set up correctly. As a result, participants' need for middlemen to handle counterparty risk is greatly reduced.
 
-- *Accessibility*   
+- *Accessibility*:   
 Decentralized networks are incredibly accessible. They are run by a network of nodes situated around the globe, and any individual can connect to the network or become one of the nodes. On top of this, Stellar has an exchange functionality built into its network. The open nature of this system means that consumers no longer require a third party to host an electronic exchange and provide them access to it. Additionally, it opens the market to new parties that find it difficult to access incumbent markets. Finally, open-market access, combined with the OptionBlox's flexibility, allows consumers to write new kinds of derivatives, potentially creating new markets.
 
-- *One source of truth*  
+- *One source of truth*:  
 The unquestionable nature of a decentralized network, combined with its accessibility means participants don't need to pay for or share market data to maintain an accurate source of information. This removes another source of friction and cost.
 
 #### Stellar - OptionBlox's Chosen Decentralized Ledger:
@@ -129,15 +126,15 @@ For more information on how we interact with Stellar’s network visit: [Network
 
 Stellar’s focus on financial applications has made it the ideal network to develop OptionBlox on. \
 Characteristics of the Stellar network crucial to OptionBlox:
-- *Efficiency*  
+- *Efficiency*:  
 Stellar’s network is efficient, having both fast transaction times and low fees. This is essential for a derivative market and is one of the main areas where Stellar shines versus other networks like Etherium.  
-- *Decentralization*  
+- *Decentralization*:  
 Unlike other blockchains, Stellar's network is truly decentralized. There is no governing body we need to rely on, as long as Stellar has users, our product will function.
 - *[Anchors](https://www.stellar.org/developers/guides/concepts/assets.html)*  
 Stellar has a multi-asset functionality called anchoring that enables users to create custom assets on its ledger and tie them to real-world assets. We use this to tokenize derivatives and to write derivatives involving any asset.  
-- *Flexible Transaction System*  
+- *Flexible Transaction System*:  
 Stellar has a flexible transaction system that allows us to create derivatives and make them trust-free, tradeable, and safe.  
-- *[Turing Signing Servers](https://github.com/tyvdh/turing-signing-server)*\
+- *[Turing Signing Servers](https://github.com/tyvdh/turing-signing-server)*:\
 The Stellar Community is currently discussing implementing a new ecosystem feature called TSS(Turing Signing Server)s. These are a decentralized network of servers that hold uploaded smart contracts that are associated with private keys. The servers will sign transactions with these private keys if the transactions meet the specifications of the contracts. We are planning on using this tool to manage some of the business logic surrounding contract execution and closure. However, if this feature is not implemented we will simply use an open-source repository to manage our execution business logic.
 
 [Stellar's website](https://www.stellar.org/developers/guides/walkthroughs/stellar-smart-contracts.html)
@@ -216,15 +213,15 @@ Our liquidity pool is made up of user-provided funds and managed by a TSS contra
 
 We use a variety of Stellar's features to ensure that our derivatives and margin accounts are secure.
 
-- *Turing Signing Servers*\
+- *Turing Signing Servers*:\
 TSSs are a network of servers where applications can upload smart contracts and the server will assign a secret key to the contract. The application can then send transaction envelopes to the servers and the servers will sign the envelopes as long as they match the contract specifications. TSS provides OptionBlox with a method of adding complex business logic to transactions without requiring our organization to have any sort of control over the accounts involved in the transactions. This further decentralizes our system while maintaining high efficiency.\
 [More Info](https://github.com/tyvdh/turing-signing-server)
 
-- *Locking Accounts*\
+- *Locking Accounts*:\
 In most of our protocols, we have accounts that add TSS contracts as servers then lock themselves. This ensures that the only transactions they can post in the future are ones approved by the contracts. We use this to lock funds in holding accounts until contract exercise.  
 [More Info](https://www.stellar.org/developers/guides/concepts/multi-sig.html)
 
-- *Timebound Transactions*  
+- *Timebound Transactions*:  
 In all of our protocols, we use timebound transactions in the closing process to ensure certain transactions cannot be submitted early. Submitting some transactions early would disrupt the exercise process.  
 [More Info](https://www.stellar.org/developers/guides/concepts/multi-sig.html)
 
@@ -233,13 +230,13 @@ Stellar's consensus protocol rejects transactions when they do not align with th
 [More Info](https://www.stellar.org/developers/guides/concepts/scp.html)  
 
 - *Account Flags*  
-  - **Authorization Required Flag**  
+  - *Authorization Required Flag*:\
   We use the authorization required flag for some of the custom derivative tokens we issue. This ensures that only users that should be allowed to hold certain assets can hold the assets.
-  - **Authorization Revokable Flag**  
+  - *Authorization Revokable Flag*:\
   We use authorization revokable flags in combination with authorization required flags to allow us to permit accounts to hold custom assets only during certain transactions. For example, this is how we ensure that option buyers are only permitted to hold the LOCK token during the exercise transaction.\
 [More Info](https://www.stellar.org/developers/guides/concepts/accounts.html#flags)
 
-- *SEP-0007 Integration*\
+- *SEP-0007 Integration*:\
 We do not want to serve as custodians for users' keys due to the risks this entails. Instead, we will use Stellar's SEP-0007 protocol to send transaction envelopes to users who can then add their signature in a trusted application or exchange.\
 [More Info](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0007.md)
 
