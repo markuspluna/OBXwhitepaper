@@ -151,43 +151,44 @@ In the traditional financial ecosystem, derivatives are often used to provide le
 2. **Equity Investment Hedging:**  
 A primary concern for investors is volatility. OptionBlox enables users to utilize financial derivatives to hedge against the volatility of any asset. 
 
-   Latera is an equity investor. He believes in THUMB LLC’s future and wants to invest. However, market volatility is a major deterrent. To mitigate volatility risk, he decides to enter into an put option contract guaranteeing him the option to sell 100 THUMB shares for $10,000 ($100/share), until the contract expires in 1 year. This hedges him against any potential decline in the market value of Thumb LLC. He purchases a large batch of contracts and enters into his THUMB investment.
+   Latera is an equity investor. He believes in THUMB LLC’s future and wants to invest. However, market volatility is a major deterrent. To mitigate volatility risk, he decides to enter into an put option contract guaranteeing him the option to sell 100 THUMB shares for $10,000 ($100/share), until the contract expires in 1 year. This hedges him against any potential decline in the market value of Thumb LLC. For example, if the price of THUMB shares declined to $80/share, Latera could exercise his option contract and sell his shares for $100/share, preventing him from taking the loss. He purchases a large batch of contracts and enters into his THUMB investment.
 
 3. **OTC Derivatives in Developing Countries:**  
-OTC derivatives are useful for all businesses. However, to enter an OTC derivative contract, the interested party must find a counterparty and facilitating party. This creates issues for unsophisticated parties lacking relationships with these entities. [A recent paper published by the IMF](https://www.elibrary.imf.org/view/IMF001/25871-9781498303774/25871-9781498303774/25871-9781498303774_A001.xml?redirect=true) found that the OTC derivative market suffers from price discrimination. Unsophisticated parties lack market accessibility, and as a result, they pay larger spreads than sophisticated parties. OptionBlox solves this problem by removing facilitating parties from the equation, and by enabling derivative trading on a distributed ledger. This makes it much easier for unsophisticated parties to find a counterparty and eliminates their need to find a facilitating party. 
+OTC derivatives are useful for all businesses. However, to enter an OTC derivative contract, the interested party must find a counterparty and facilitating party. This creates issues for unsophisticated parties lacking relationships with these entities. [A recent paper published by the IMF](https://www.elibrary.imf.org/view/IMF001/25871-9781498303774/25871-9781498303774/25871-9781498303774_A001.xml?redirect=true) found that the OTC derivative market suffers from price discrimination. Unsophisticated parties lack market accessibility, and as a result, they receive worse prices than sophisticated parties. OptionBlox solves this problem by removing facilitating parties from the equation and expanding OTC derivative market accessibility. This makes it much easier for unsophisticated parties to find a counterparty and eliminates their need to find a facilitating party. 
 
-   Adam is a citizen and resident of Vietnam. He owns a clothing factory and most of his revenue is received in USD. However, most of his expenses are paid in Vietnamese Dong(VND). He would like to hedge against exchange rate fluctuations by entering an OTC USD:VND future. However, he is not a large enough client to have connections with foreign banks or facilitating parties in the derivatives market. To make things more difficult, foreign currency exchange is illegal in Vietnam. Adam finds out about OptionBlox and realizes it is the answer to his problems. Using OptionBlox, he enters into an OTC USD:VND future with a western bank that also wants to hedge against exchange rate fluctuations. Because he did not have to find a facilitating party and had access to a wide range of counterparties, the spread he paid using OptionBlox was small. The distributed nature of the application also allowed him to circumvent local currency controls.
+   Adam is a citizen and resident of Vietnam. He owns a clothing factory and most of his revenue is received in USD. However, most of his expenses are paid in Vietnamese Dong(VND). He would like to hedge against exchange rate fluctuations by entering an OTC USD:VND future. However, he is not a large enough client to have connections with foreign banks or facilitating parties in the derivatives market. To make things more difficult, foreign currency exchange is difficult in Vietnam. Adam finds out about OptionBlox and realizes it is the answer to his problems. Using OptionBlox, he enters into an OTC USD:VND future with a western bank that also wants to hedge against exchange rate fluctuations. Because he did not have to find a facilitating party and had access to a wide range of counterparties, the price he paid using OptionBlox was fair.
 
 4. **Carbon Credits Use Case:**\
 Carbon emissions are a crucial issue today. One proposed way to handle them is by issuing carbon credits to companies. These credits govern how much carbon companies can emit and can be traded between companies so that they are used most efficiently. Using OptionBlox, with the help of a carbon credit anchor, companies could trade derivatives on their carbon credits.
 
-   Xiao is an executive at a major battery producer. Business is booming, and she wants to expand operations, however, her company needs to continually purchase more carbon credits to do so. As a result, future carbon credit price increases are a risk for this expansion. Xiao does some research and discovers OptionBlox. She realizes she can use our product to purchase carbon credit call options, hedging her company against the risk of carbon credit price increases. Her company purchases the calls and goes ahead with the expansion. 
+   Xiao is an executive at a major battery producer. Business is booming, and she wants to expand operations, however, her company needs to continually purchase more carbon credits to do so. As a result, future carbon credit price increases are a risk for this expansion. Xiao does some research and discovers OptionBlox. She realizes she can use our product to purchase carbon credit call options, hedging her company against the risk of carbon credit price increases. These derivatives will giver her company the option of purchasing carbon credits at a set price regardless of future price appreciation until they expire. Her company purchases the calls and goes ahead with the expansion. 
   
 ### OptionBlox's Derivative Protocols:
 OptionBlox features a range of tradeable decentralized derivative products
 ##### Covered Options
-Our covered options are created using a network of accounts and preauthorized transactions. This protocol is based completely on Stellar's network and can operate without any input besides users submitting transactions. These options are European style.  
+OptionBlox's covered options are created using a network of accounts and TSS(Turing-Signing-Server) smart contracts. This protocol is based completely on Stellar's network and can operate without any input besides users submitting transactions. These options are American style meaning they can be exercised at any time before expiration.
 
-Below is a basic model showing the writing, sale, and exercise processes of a covered call with an underlying of 1 Bitcoin(BTC), and a strike price of 50 Lumens(XLM).
+Below is a basic model showing the writing, sale, and exercise processes of a covered call with an underlying of 1 Bitcoin(BTC), and a strike price of 1000 Lumens(XLM).
 
 ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/CoveredOptions(whitepaper)-no%20example.png "Covered Options")
 
 ##### Uncovered Options
-Our uncovered options use a similar process as our covered options. The key difference is the holding account also serves as a margin account for the seller. We use an open-source code repository to operate the logic surrounding margin requirements. Stellar's native operations are not complicated enough to allow us to calculate margin requirements within transactions. Using a repository also increases processing speed.  We create an encrypted keypair for the repository to accomplish this securely. We do not have access to this keypair. We then add the repository's secret key as a signer on the holding account. This allows the repository to sign pre-defined transactions for the holding account.
+OptionBlox's uncovered options use a similar process as our covered options. The key differences are the holding account also serves as a margin account for the seller and the execution process differs slightly.
 
-Below is a model showing the writing, sale, and execution process of an uncovered call. The call contract's underlying is 1 BTC, its strike price is 50 XLM, the initial margin requirement is 15%, and the minimum margin requirement is 10%. These options are European style.
+Below is a model showing the writing, sale, and execution process of an uncovered call. The call contract's underlying is 1 BTC, its strike price is 100 XLM, the initial margin requirement is 15%, and the minimum margin requirement is 10%. These options are American style.
 
 ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/UncoveredOptions(whitepaper)-no%20example.png "Uncovered Options")
 
 ##### Futures
-Our futures protocol expands on the uncovered options protocol. We use two margin and holding accounts, one for the buyer and one for the seller. We use the same open-source repository that we use with uncovered options to handle the margin and settlement operations. We settle our futures daily.
+OptionBlox's futures protocol also operates using a network of accounts and TSS contracts. Instead of using derivative tokens, the future's protocol tokenzes the underlying assets and when their exchange price represents the spot rate the future is entered at. OptionBlox settle our futures daily.
 
 Below is a basic model showing the writing, sale, execution, and exit of a 100XLM:1BTC future with a 15% initial margin requirement and a 10% minimum margin requirement.
 
-*Diagram is currently under revision*\
+*Diagram is currently under revision*
 
 ##### Forwards
-Our forwards' protocol operates almost the same way as our futures protocol. The main difference is that forwards do not settle daily. As a result, underlying values do not change. Therefore, we can use joint-preauthorized transactions in the exercise process instead of signing transactions with the repository.
+We have an internal forwards protocol we plan to implement in the future. It is a modified version of our futures protocol.
+
 
 ##### Swaps
 We have an internal swaps protocol we plan to implement in the future. It is a modified version of our futures protocol.
@@ -198,10 +199,10 @@ We have an internal swaps protocol we plan to implement in the future. It is a m
 Contract sizes are standardized. This means that options and futures contracts have uniform underlying amounts. For example, all Ethereum options and futures will have an underlying of 1 ETH. This standardization helps maintain contract volume.
 
 ##### Partial Contracts
-Tokenizing derivatives allows OptionBlox users to write partial derivative contracts. Users can write and sell fractions of contracts and they will just be sent an equivalent portion of the contract token(s). This is a crucial functionality to maintain standardized contract sizes but allows users with less capital to still utilize the derivatives ecosystem.
+Tokenizing derivatives allows OptionBlox users to write partial derivative contracts. Users can write and sell fractions of contracts and they will just be sent an equivalent portion of the contract token(s). This is a crucial functionality to maintain standardized contract sizes but allow users with less capital to still utilize the derivatives ecosystem.
 
 ##### Liquidation Prodecures
-OptionBlox’s Uncovered Options and Futures protocols require position liquidation when the position holders become delinquent on their margin requirements or fail to provide the necessary underlying to complete contract settlement. In these situations the protocols will attempt to liquidate positions on the Stellar DEX. However, if low volume makes this impossible, we use a TSS managed liquidity pool to exit the position. 
+OptionBlox’s Uncovered Options and Futures protocols require position liquidation when the position holders become delinquent in meeting their margin requirements or fail to provide the necessary underlying to complete contract settlement. In these situations the protocols will attempt to liquidate positions on the Stellar DEX. However, if low volume makes this impossible, we use a TSS managed liquidity pool to exit the position. 
 
 ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/UncoveredOptionLiquidation(whitepaper)-no%20example.png "Insufficient Margin Liquidation (option)")
 ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/FuturesNoUnderlying(whitepaper)-no%20example.png "Insufficient Underlying(future)")
@@ -214,7 +215,7 @@ Our liquidity pool is made up of user-provided funds and managed by a TSS contra
 We use a variety of Stellar's features to ensure that our derivatives and margin accounts are secure.
 
 - *Turing Signing Servers*:\
-TSSs are a network of servers where applications can upload smart contracts and the server will assign a secret key to the contract. The application can then send transaction envelopes to the servers and the servers will sign the envelopes as long as they match the contract specifications. TSS provides OptionBlox with a method of adding complex business logic to transactions without requiring our organization to have any sort of control over the accounts involved in the transactions. This further decentralizes our system while maintaining high efficiency.\
+TSSs are a network of servers where applications can upload smart contracts and the server will assign a secret key to the contract. The application can then send transaction envelopes to the servers and the servers will sign the envelopes as long as they match the contract specifications. TSS provides OptionBlox with a method of adding complex business logic to transactions without requiring our organization to have control over the accounts involved in the transactions. This further decentralizes our system while maintaining high efficiency.\
 [More Info](https://github.com/tyvdh/turing-signing-server)
 
 - *Locking Accounts*:\
@@ -233,11 +234,11 @@ Stellar's consensus protocol rejects transactions when they do not align with th
   - *Authorization Required Flag*:\
   We use the authorization required flag for some of the custom derivative tokens we issue. This ensures that only users that should be allowed to hold certain assets can hold the assets.
   - *Authorization Revokable Flag*:\
-  We use authorization revokable flags in combination with authorization required flags to allow us to permit accounts to hold custom assets only during certain transactions. For example, this is how we ensure that option buyers are only permitted to hold the LOCK token during the exercise transaction.\
+  We use authorization revokable flags in combination with authorization required flags to allow us to permit accounts to hold some custom assets only during certain transactions.\
 [More Info](https://www.stellar.org/developers/guides/concepts/accounts.html#flags)
 
 - *SEP-0007 Integration*:\
-We do not want to serve as custodians for users' keys due to the risks this entails. Instead, we will use Stellar's SEP-0007 protocol to send transaction envelopes to users who can then add their signature in a trusted application or exchange.\
+We do not want to serve as custodians for users' keys due to the risks this entails. Instead, we will use Stellar's SEP-0007 protocol to send transaction envelopes to users who can then add their signature in a trusted wallet or exchange.\
 [More Info](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0007.md)
 
 ### Anchors:
@@ -285,3 +286,4 @@ Terms:
 - *Smart Contract:* A protocol to digitally facilitate, verify, or enforce the performance of a contract.  
 - *Keypair:* When an account is created on Stellar's ledger, they are assigned a public and a private key. The private key is used to sign transactions and the public key is used to identify the account. These two keys make up the account's keypair.
 - *Underlying:* The asset a derivative contract governs. This is what the contracts value is based off of. In the case of a call option that gives the owner the right to buy Ethereum, the contract underyling would be Ethereum. 
+- *Hedging:* Hedging is a term for making an investment that reduces the risk of another investment.
