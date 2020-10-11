@@ -42,7 +42,8 @@ Swaps are similar to forwards. The difference is that instead of one exchange of
 
 ##### Increased Efficiency  
 The incumbent derivatives market suffers from a large amount of friction. It requires market intermediaries to provide access to the market, facilitate trades, and lower counterparty risk. These additional parties cause inefficiency which creates costs that get passed on to investors. By facilitating derivatives on Stellar's decentralized network, OptionBlox eliminates the need for market intermediaries. The diagrams below illustrate the efficiency gained by eliminating market intermediaries by comparing the post-trade process in the traditional derivatives ecosystewm with the post-trade process in the OptionBlox derivatives ecosystem.
-\
+
+
 **Traditional ecosystem post-trade processing**\
 ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/post-trade%20processing%20traditional.JPG "Traditional Post-Trade")
 > Citation: ISDA. "The Future of Derivatives Processing and Market Infrastructure". ISDA Whitepaper. 2016.
