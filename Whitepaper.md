@@ -261,12 +261,12 @@ As Stellar's network grows we are confident that more anchors will materialize a
 
 ### Roadmap
 1. *Q3 2020*
-   - Finalize Backend Demo
-   - Finalize Web-App Demo
-   - Continue Application Development
-   - Expand Engineering Team
-   - Begin Seed Funding Search
-   - Explore Wallet Parnerships
+- Finalize Backend Demo
+- Finalize Web-App Demo
+- Continue Application Development
+- Expand Engineering Team
+- Begin Seed Funding Search
+- Explore Wallet Parnerships
  2. *Q4 2020*
    - Finalize Website
    - Continue Application Development
