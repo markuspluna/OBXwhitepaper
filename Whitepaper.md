@@ -59,7 +59,7 @@ The formentioned research paper also discussed data access fees that derivative 
 \
 OptionBlox also holds efficiency advantages over other decentralized derivative products. Most of these are built on Ethereum, which is a fundamentally less efficient decentralized ledger than Stellar.\
 \
-Tables exhibiting the formentioned efficiency increases are exhibited below:\
+Tables exhibiting the formentioned efficiency increases are exhibited below:
 
 
 **Ecosystem Fees Associated with Stellar Based Derivatives**
