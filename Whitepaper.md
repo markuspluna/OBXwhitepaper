@@ -215,8 +215,8 @@ Our liquidity pool is made up of user-provided funds and managed by a TSS contra
 
 We use a variety of Stellar's features to ensure that our derivatives and margin accounts are secure.
 
-- *Turing Signing Servers*:\
-TSSs are a network of servers where applications can upload smart contracts and the server will assign a secret key to the contract. The application can then send transaction envelopes to the servers and the servers will sign the envelopes as long as they match the contract specifications. TSS provides OptionBlox with a method of adding complex business logic to transactions without requiring our organization to have control over the accounts involved in the transactions. This further decentralizes our system while maintaining high efficiency.\
+- *Turing Signing Server Protocol*:\
+Turing Signing Servers(TSSs) are a network of servers that Stellar applications use for complicated smart contracts. Applications upload smart contracts to multiple TSSs and the servers assign a secret key to the contract. The application can then send transaction envelopes to the servers and the servers will sign the envelopes as long as they match the contract specifications. The TSS protocol provides OptionBlox with a method of adding complex business logic to transactions without requiring our organization to have control over the accounts involved in the transactions. This further decentralizes our system without requiring us to sacrifice efficiency.\
 [More Info](https://github.com/tyvdh/turing-signing-server)
 
 - *Locking Accounts*:\
