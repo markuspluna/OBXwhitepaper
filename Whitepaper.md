@@ -2,14 +2,16 @@
 # OPTIONBLOX
 ## A Decentralized Derivatives Solution Built on Stellar
 
-Markus Paulson-Luna: markuspaulsonluna@optionblox.com
-Andrew Pierskalla: andrew@optionblox.com
-Alexander Mootz: alex@optionblox.com
+Markus Paulson-Luna: markuspaulsonluna@optionblox.com\
+Andrew Pierskalla: andrew@optionblox.com\
+Alexander Mootz: alex@optionblox.com\
 Salomon Fadel: salomon@optionblox.com
 
 ### Abstract
 
 OptionBlox is a protocol for writing, trading, and exercising financial derivatives on Stellar's decentralized ledger. OptionBlox uses a unique smart contract system to make these derivatives trust-free as well as ledger-based. Doing so eliminates the need for market intermediaries- increasing ecosystem efficiency, flexibility, and accessibility. The OptionBlox protocol supports derivatives involving any asset pair, charges less than 1 cent per contract, and can be used by anyone in the world. Additionally, OptionBlox tokenizes derivative contracts, allowing them to be traded on any centralized or decentralized exchange, and even stored offline. Overall, OptionBlox makes vast improvements on incumbent derivative processing solutions and enables equitable access to a flexible, efficient derivatives market built on Stellar. 
+
+*Note: The OptionBlox protocol refers to an umbrella of protocols that process different derivative types. Protocols vary slightly based on the derivative type they support.*
 
 ### Table of Contents:
 - [Introduction](https://github.com/markuspluna/OBXwhitepaper/blob/master/Whitepaper.md#introduction)
@@ -189,7 +191,7 @@ OptionBlox uncovered options and futures require position liquidation when the p
 The OptionBlox liquidity pool is made up of user-provided funds and managed by a TSS contract. Users will receive tokens in exchange for the funds they contribute, the tokens represent their contribution and govern the percentage of liquidation profits they receive. Because of the margin requirements for OptionBlox contracts, it will never be in the position holder's economic interest to allow liquidation, and there will always be an economic incentive to liquidate the position. Profits from liquidating delinquent positions will be paid out to liquidity providers every week. 
 
 ### The OptionBlox App:
-The OptionBlox team is currently developing web and mobile applications to allow all parties to easily use the OptionBlox protocol. This app will act as a platform that interfaces with the Stellar, OptionBlox, and user wallets to provide a user-freindly derivative writing, trading, and execution experience. The app does not run orderbooks, pair buyers and sellers, issue securities, or serve as custodian over user funds or keys. It simply serves as a browser that enables users to easily interact with OptionBlox and Stellar.
+The OptionBlox team is currently developing web and mobile applications to allow all parties to easily use the OptionBlox protocol. This app will act as a platform that interfaces with the Stellar, OptionBlox, and user wallets to provide user-freindly derivative writing, trading, and execution experience. The app does not run orderbooks, pair buyers and sellers, issue securities, or serve as custodian over user funds or keys. It simply serves as a browser that enables users to easily interact with OptionBlox and Stellar.
 
 ### Security:
 
@@ -265,6 +267,6 @@ As Stellar's network grows we are confident that more anchors will materialize a
 ### Glossary
 Terms:  
 - *Smart Contract:* A protocol to digitally facilitate, verify, or enforce the performance of a contract.  
-- *Keypair:* When an account is created on Stellar's ledger, they are assigned a public and a private key. The private key is used to sign transactions and the public key is used to identify the account. These two keys make up the account's keypair.
+- *Keypair:* When an account is created on Stellar's ledger, it is assigned a public and a private key. The private key is used to sign transactions and the public key is used to identify the account. These two keys make up the account's keypair.
 - *Underlying:* The asset a derivative contract governs. This is what the contract's value is based on. In the case of a call option that gives the owner the right to buy Ethereum, the contract underlying would be Ethereum. 
 - *Hedging:* Hedging is a term for making an investment that reduces the risk of another investment.
