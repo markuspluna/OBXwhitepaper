@@ -152,7 +152,7 @@ OptionBlox covered options are created using a network of accounts and TSS(Turin
 
 Below is a basic model showing the writing, sale, and exercise processes of a covered call with an underlying of 1 Bitcoin(BTC), and a strike price of 1000 Lumens(XLM).
 
-![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/CoveredOptions(whitepaper)-noexample.png "Covered Options")
+![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/CoveredOptions(whitepaper)-(v2).png "Covered Options")
 
 ##### Uncovered Options
 OptionBlox uncovered options are similar to OptionBlox covered options. The key differences are the holding account also serves as a margin account for the seller and the execution process differs slightly.
