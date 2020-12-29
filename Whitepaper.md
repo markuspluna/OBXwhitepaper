@@ -43,15 +43,12 @@ Swaps are similar to forwards. The difference is that instead of one exchange of
 #### Value Proposition:  
 
 ##### Increased Efficiency  
-The incumbent derivatives market suffers from a large amount of friction. It requires market intermediaries to provide access to the market, facilitate trades, and lower counterparty risk. These additional parties cause inefficiency which creates costs that get passed on to investors. By facilitating derivatives on Stellar's decentralized network, OptionBlox eliminates the need for market intermediaries. The diagrams below illustrate the efficiency gained by eliminating market intermediaries by comparing the post-trade process in the traditional derivatives ecosystem with the post-trade process in the OptionBlox derivatives ecosystem.
+The incumbent derivatives market suffers from a large amount of friction. It requires market intermediaries to provide access to the market, facilitate trades, and lower counterparty risk. These additional parties cause inefficiency which creates costs that get passed on to investors. By facilitating derivatives on Stellar's decentralized network, OptionBlox eliminates the need for market intermediaries. The diagram below illustrate the efficiency gained by eliminating market intermediaries by comparing the post-trade process in the traditional derivatives ecosystem with the post-trade process in the OptionBlox derivatives ecosystem.
 
-
-**Traditional ecosystem post-trade processing**\
-![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/post-trade%20processing%comparison.svg "Post-Trade Processing Comparison")
+**Post-Trade processing comparison**\
+![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/post-trade%20processing%20comparison.jpg "Post-Trade Processing Comparison")
 > Citation: ISDA. "The Future of Derivatives Processing and Market Infrastructure". ISDA Whitepaper. 2016.
 
-**OptionBlox ecosystem post-trade processing**\
-![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/OBXpost-tradeProcessFlow%20(option-trade).png "OBX Post-Trade")
 
 A research paper that covered Stellar-based financial derivatives measured the monetary impact of the increased efficiency that Stellar-based derivatives provide. To measure the costs that get passed to users as a result of inefficiency in the traditional derivatives ecosystem, the paper measured central parties' revenue-per-contract. To measure the costs associated with Stellar-based derivatives, the researchers processed derivatives on-ledger and measured the network fees. Their findings are summarized in the tables below.\
  \
