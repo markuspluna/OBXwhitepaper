@@ -47,7 +47,7 @@ The incumbent derivatives market suffers from a large amount of friction. It req
 
 
 **Traditional ecosystem post-trade processing**\
-![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/post-trade%20processing%20traditional.JPG "Traditional Post-Trade")
+![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/post-trade%20processing%comparison.svg "Post-Trade Processing Comparison")
 > Citation: ISDA. "The Future of Derivatives Processing and Market Infrastructure". ISDA Whitepaper. 2016.
 
 **OptionBlox ecosystem post-trade processing**\
