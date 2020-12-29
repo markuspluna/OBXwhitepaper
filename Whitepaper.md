@@ -5,7 +5,6 @@
 Markus Paulson-Luna: markuspaulsonluna@optionblox.com\
 Andrew Pierskalla: andrew@optionblox.com\
 Alexander Mootz: alex@optionblox.com\
-Salomon Fadel: salomon@optionblox.com
 
 ### Abstract
 
@@ -86,7 +85,7 @@ Tables exhibiting the economic impact of the formentioned efficiency increases a
 |---|---|
 |$5.50+|$1.10+|
 
-> Citation: Paulson-Luna, Riley. "The Financial Derivatives Ecosystem is Old - Decentralized Ledger Technology is its Fountain of Youth". 2020. ASSE 2020.
+> Citation: Paulson-Luna, Riley. "The Financial Derivatives Ecosystem is Old - Decentralized Ledger Technology is its Fountain of Youth". 2020. ASSE 2020. DOI= https://dl.acm.org/doi/abs/10.1145/3399871.3399904
 
 ##### Market Accessibility  
 OptionBlox uses DLT(Decentralized Ledger Technology) to make improvements in derivative ecosystem accessibility. The decentralized nature of OptionBlox means it is accessible to anyone with an internet connection. This is a huge improvement over the current state of the derivatives ecosystem where only a minute portion of the world has efficient ecosystem access. The incumbent derivative ecosystem’s dependence on central parties makes it impossible for it to serve a wider market. Since OptionBlox uses DLT to facilitate derivatives instead of central parties, it does not suffer from these limitations. Accessibility is core to OptionBlox’s offering, we want the protocol to enable equitable derivative ecosystem access. With OptionBlox’s innovation in accessibility, flexibility, and efficiency we believe it will do so. 
