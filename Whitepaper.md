@@ -4,7 +4,7 @@
 
 Markus Paulson-Luna: markuspaulsonluna@optionblox.com\
 Andrew Pierskalla: andrew@optionblox.com\
-Alexander Mootz: alex@optionblox.com\
+Alexander Mootz: alex@optionblox.com
 
 ### Abstract
 
