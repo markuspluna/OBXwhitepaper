@@ -25,7 +25,7 @@ Optionblox is a platform and DeFi protocol that enables users to write, trade, a
 The incumbent derivatives market suffers from a large amount of friction. It requires market intermediaries to provide access to the market, facilitate trades, and lower counterparty risk. These additional parties cause inefficiency, which creates costs that get passed on to investors. By facilitating derivatives on Stellar, OptionBlox eliminates the need for market intermediaries. The diagrams below illustrate the efficiency gained from eliminating market intermediaries by comparing the traditional derivative ecosystem’s post-trade process with Optionblox’s post-trade process.
  
 **Financial Transaction Processing Comparison**\
-![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/post-trade%20processing%20comparison.jpg "Post-Trade Processing Comparison")
+![alt text](https://raw.githubusercontent.com/markuspluna/OBXwhitepaper/master/photos/post-trade%20processing%20comparison.jpg "Post-Trade Processing Comparison")
 > Citation: ISDA. "The Future of Derivatives Processing and Market Infrastructure". ISDA Whitepaper. 2016. DOI= https://www.isda.org/2016/09/15/the-future-of-derivatives-processing-and-market-infrastructure/
  
 A research paper that covered Stellar-based financial derivatives measured the monetary impact of their efficiency improvements. The paper delved into efficiency gains in both transaction processing and data accessibility. Data accessibility is a huge source of cost and inefficiency in the traditional derivatives ecosystem. Additionally, the paper measured costs associated with Ethereum based financial derivatives to demonstrate Stellar’s efficiency advantage in the DeFi ecosystem. The results of the research paper are shown in the tables below.\
@@ -62,7 +62,7 @@ OptionBlox provides unparalleled flexibility, allowing users to accomplish any d
 OptionBlox also uses the Anchor system to tokenize derivative contracts, which is essential in the DLT(decentralized ledger technology) space. Tokenization allows our derivatives to be traded on any cryptocurrency exchange and stored anywhere. A derivative writer could write a derivative on our platform, then transfer it to their Binance account and sell it on their market. A derivative buyer could take their newly purchased derivative tokens and transfer them to their Ledger Nano S for added security. This flexibility is essential due to the fragmentation of the DLT space. It also serves to decentralize OptionBlox further. In addition to improving trading and storage flexibility, tokenization allows users to write partial derivatives. This enables users with different levels of wealth to use derivatives while still allowing OptionBlox to retain standardized derivative sizes. For example, our Ethereum options are standardized to have an underlying of 1 ETH to preserve contract volume. If a user wants to write an ETH option but cannot provide the entire 1 ETH underlying, our partial derivative capability allows them to write a fractional derivative. They can provide us with a fraction of 1 ETH as their contracts underlying and receive a proportional fraction of an ETH option token.
 
  
- ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/OBX%20flexibility.png "Flexibility Graphic")
+ ![alt text](https://raw.githubusercontent.com/markuspluna/OBXwhitepaper/master/photos/OBX%20flexibility.png "Flexibility Graphic")
 
  
 ### OptionBlox Pillar 3: Accessibility
@@ -81,30 +81,67 @@ For more technical details regarding how our protocol and TSS smart contracts fu
 
 ### High-Level Protocol Overview
 
- ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/High-Level%20OBX%20protocol.png "OBX Protocol")
+ ![alt text](https://raw.githubusercontent.com/markuspluna/OBXwhitepaper/master/photos/High-Level%20OBX%20protocol.png "OBX Protocol")
  
  
  
  
 ### OptionBlox User Journey
 **1. User links their wallet on the OptionBlox home page**
- ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/demo_linkWallet.gif "Link Wallet")
+<details open={true}><summary>Toggle View</summary>
+<p>
+
+ ![alt text](https://raw.githubusercontent.com/markuspluna/OBXwhitepaper/master/photos/demo_linkWallet.gif "Link Wallet")
+
+</p>
+</details>
+
+
+
  
  
 **2. User clicks XLM card to navigate to XLM option market page**
- ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/demo_navToTrade.gif "Navigate to Market")
+<details open={true}><summary>Toggle View</summary>
+<p>
+
+ ![alt text](https://raw.githubusercontent.com/markuspluna/OBXwhitepaper/master/photos/demo_navToTrade.gif "Navigate to Market")
+
+</p>
+</details>
+
  
  
 **3. User selects the options they'd like to sell or buy**
- ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/demo_addOptions.gif "Select Options")
+<details open={true}><summary>Toggle View</summary>
+<p>
+
+ ![alt text](https://raw.githubusercontent.com/markuspluna/OBXwhitepaper/master/photos/demo_addOptions.gif "Select Options")
+
+</p>
+</details>
+
  
  
 **4. User confirms their trade and approves the transaction in their wallet**
- ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/demo_submitOptions.gif "Confirm Trade")
+<details open={true}><summary>Toggle View</summary>
+<p>
+
+ ![alt text](https://raw.githubusercontent.com/markuspluna/OBXwhitepaper/master/photos/demo_submitOptions.gif "Confirm Trade")
+
+</p>
+</details>
+
  
  
 **5. User can now view their options on the My Options page. They can also execute, sell, or cover their options from this page**
- ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/demo_myOptionsPage.png "My Options")
+<details open={true}><summary>Toggle View</summary>
+<p>
+
+ ![alt text](https://raw.githubusercontent.com/markuspluna/OBXwhitepaper/master/photos/demo_myOptionsPage.png "My Options")
+
+</p>
+</details>
+
 
  
  ### Note on Turing Signing Servers
