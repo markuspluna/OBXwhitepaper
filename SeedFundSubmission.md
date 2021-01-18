@@ -1,13 +1,13 @@
 ## Derivatives Overview
 We will briefly give an explanation of financial derivatives to help give context to OptionBlox. A derivative is a financial contract between two parties. Its value is based on an agreed-upon asset or a set of assets. The most common forms of financial derivatives are futures and options.
-### Futures
+#### Futures
 Futures are contracts between two parties to buy/sell an agreed-upon quantity of an asset, called the underlying asset, for a set price at an established future time. Common uses of futures are to hedge against price movement by the underlying asset, increase leverage, and gain exposure to rates.\
 \
 **Sample Futures Use Case Supported by OptionBlox:**
 1. *Hedging*\
 A gold miner knows that they will be selling 6000 kilos of gold in 6 months. 1 kilo of gold is currently worth $1000. The miner does not want to risk gold prices falling in the next 6 months, so they enter a futures contract to sell 6000 kilos of gold for $6,000,000 in 6 months. This “locks in” the current price of gold for them and allows them to continue their operations without any risk of prices falling.
 
-### Options
+#### Options
 Options are contracts between two parties, a writer and a buyer. The contract gives the buyer the option, but not the obligation, to buy or sell an asset at an agreed-upon price until the option expires. If the buyer decides to exercise this right, the option writer will fulfill the buyer's purchase or sale. Options can be either puts or calls. A call option allows its owner to buy the underlying asset at the agreed-upon "strike price." A put option allows its owner to sell the underlying asset at the strike price. Common uses of options are hedging, increasing leverage, and income generation.\
  \
 **Sample Options Use Cases Supported by OptionBlox:**
