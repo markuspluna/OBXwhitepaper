@@ -81,11 +81,11 @@ For more technical details regarding how our protocol and TSS smart contracts fu
 
 ### High-Level Protocol Overview
 
- ![alt text](https://drive.google.com/file/d/1MSoVb8hOQ6cTwqxkKs4cOF697w1h7dPW/view?usp=sharing "OBX Protocol")
+ ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/High-Level%20OBX%20protocol.png "OBX Protocol")
  
 ### OptionBlox User Journey
 1. User links their wallet on the OptionBlox home page\
- ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/High-Level%20OBX%20protocol.png "OBX Protocol")
+
 
 2. User clicks XLM card to navigate to XLM option market page\
 3. User selects XLM option at one strike price (.20) and selects to sells it [they should get a popup saying a request has been sent to their wallet for them to approve]\
