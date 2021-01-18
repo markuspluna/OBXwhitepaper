@@ -79,6 +79,7 @@ For more technical details regarding how our protocol functions see our whitepap
 
 ### High-Level Protocol Overview
 
+ ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/High-Level%20OBX%20protocol.png "OBX Protocol")
  
 ### OptionBlox User Journey
 User links wallet on the OptionBlox home page\
