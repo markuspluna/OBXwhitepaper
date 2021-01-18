@@ -83,16 +83,27 @@ For more technical details regarding how our protocol and TSS smart contracts fu
 
  ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/High-Level%20OBX%20protocol.png "OBX Protocol")
  
+ 
+ 
+ 
 ### OptionBlox User Journey
-1. User links their wallet on the OptionBlox home page
+**1. User links their wallet on the OptionBlox home page**
  ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/demo_linkWallet.gif "Link Wallet")
-2. User clicks XLM card to navigate to XLM option market page
+ 
+ 
+**2. User clicks XLM card to navigate to XLM option market page**
  ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/demo_navToTrade.gif "Navigate to Market")
-3. User selects the options they'd like to sell or buy
+ 
+ 
+**3. User selects the options they'd like to sell or buy**
  ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/demo_addOptions.gif "Select Options")
-4. User confirms their trade and approves the transaction in their wallet
+ 
+ 
+**4. User confirms their trade and approves the transaction in their wallet**
  ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/demo_submitOptions.gif "Confirm Trade")
-5. User can now view their options on the My Options page. They can also execute, sell, or cover their options from this page
+ 
+ 
+**5. User can now view their options on the My Options page. They can also execute, sell, or cover their options from this page**
  ![alt text](https://github.com/markuspluna/OBXwhitepaper/blob/master/photos/demo_myOptionsPage.png "My Options")
 
  
