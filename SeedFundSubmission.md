@@ -129,3 +129,6 @@ Given OptionBlox’s high level of interaction with Stellar and Horizon, we want
   To help the Stellar Community fully utilize derivatives, we want to create a tool that will help OptionBlox users calculate the best way to hedge their portfolios using derivatives.
 5. *OptionBlox Yield Pools*\
   Selling covered options is a great way to generate passive income using your investments. However, it is often over-complicated and difficult. We hope to develop OptionBlox yield pools where users can easily stake their holdings to generate yield by writing options.
+  ## YieldBlox – a Future OptionBlox Initiative
+The OptionBlox team is currently developing a decentralized loan protocol powered by Turing Signing Servers. This protocol will allow asset holders on Stellar to lend out their assets and receive interest payments from borrowers. It will be structured as a combination of DAI and Compound. We are excited to share more details about this project as it gets further along in development.
+
